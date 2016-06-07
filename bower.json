@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "description": "Portfolio site of Paul Thorpe",
+  "main": "",
+  "authors": [
+    "paulsthorpe <paulsthorpe@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "paulsthorpe.co",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4"
+  },
+  "devDependencies": {
+    "jquery": "^2.2.4",
+    "font-awesome": "fontawesome#^4.6.3",
+    "bootstrap": "^3.3.6"
+  }
+}

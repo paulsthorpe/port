@@ -1,0 +1,236 @@
+$darkblue: #082a4f;
+$lightblue: #6c98b8;
+$white: #fff;
+$bg: #f1f2f1;
+$darkFont: #252525;
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.blog-nav {
+  width: 100%;
+  height: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.2s, opacity 0.2s;
+  &:hover {
+    background-color: $darkblue;
+    opacity: 0.8;
+     > .nav-elements li a {
+      color: #6c98b8;
+    }
+  }//header_nav:hover
+
+  .nav-elements{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    li {
+      height: 100%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      transition: all 0.2s;
+      a {
+        color: $darkblue;
+      }
+      &:hover {
+        border-bottom: 3px solid $lightblue;
+      }
+    }//li
+  }//nav-elements
+}//blog-nav
+.blog-index {
+  font-family: 'Raleway', sans-serif;
+
+  width: 100vw;
+  background-color: $bg;
+
+  .banner {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    @include centerbg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      // transform: translateY(-100px);
+      color: $white;
+      font-size: 6em;
+    }
+
+
+  } //banner
+
+  .sidebar {
+
+    h2 {
+      color: $darkFont;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        display: flex;
+        a {
+          color: $darkFont;
+          &:hover {
+            color: $lightblue;
+          }
+        }
+      }
+    }
+  }
+
+  .recent-posts {
+    * {
+      color: $darkFont;
+    }
+    min-height: 100vh;
+    z-index: 1;
+    margin-top: -50px;
+    background-color: $bg;
+
+
+
+    .post-container {
+      height: 450px;
+      border: 1px solid darken($bg, 2);
+      color: $darkFont;
+
+
+      .post {
+
+        width: 90%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0 20px;
+        position: relative;
+        color: $darkFont;
+
+        .img {
+          width: 100%;
+          height: 250px;
+          @include centerbg;
+          margin-bottom: 20px;
+        } //img container
+
+        p {
+          font-size: 1.6em;
+          color: $darkFont;
+        } //p
+
+        .tags {
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+
+          a {
+            padding: 10px;
+            color: $darkFont;
+            &:hover {
+              color: $lightblue;
+            }
+          }//tags links
+
+        }//tags
+
+      }//post
+      &:hover{
+        background-color: $white;
+      }
+    }//post-container
+
+    .pagination-area {
+      display: block;
+      margin: 60px auto;
+      bottom: 0;
+
+      ul {
+
+        height: 50px;
+        width: 20%;
+        display: flex;
+        margin: 0 auto;
+        list-style: none;
+
+        li {
+
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $lightblue;
+          transition: 0.2s all;
+          span {
+            background-color: inherit;
+            border: 0px;
+          }
+          a {
+            background-color: inherit;
+            border: 0px;
+          }
+          &:hover {
+            background-color: $darkblue;
+          }
+        }
+      }
+    }
+  }//recent-posts
+
+  .contact {
+  width: 100%;
+
+  position: relative;
+  top: 0;
+  color: $white;
+  @include background-image-blue('/images/contact.jpg');
+  .contact_info_wrapper {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 1%;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.4em;
+
+    .contact_header {
+      font-size: 2em;
+      padding-bottom: 10px;
+    }//skills_header
+
+  } //contact_info_wrapper
+  .social {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 22px;
+    padding-top: 10px;
+    text-align: center;
+    a {
+      padding: 20px 10px;
+      i {
+        color: $white;
+      }
+    }
+  }
+}//contact
+
+}//blog index
