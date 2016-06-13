@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    $posts = DB::table('posts')->orderBy('id','DESC')->take(5)->get();
+    return view('index', compact('posts'));
 });
 
 Route::get('/blog', 'PostController@index');
@@ -33,7 +34,7 @@ Route::get('/post', function () {
 
 Route::auth();
 
-Route::get('profile', ['middleware' => 'auth', function() {
+// Route::get('profile', ['middleware' => 'auth', function() {
   Route::get('/admin', function () {
       return view('admin.layout');
   });
@@ -49,6 +50,6 @@ Route::get('profile', ['middleware' => 'auth', function() {
       $posts = App\Post::orderBy('updated_at','DESC')->get();
       return view('admin.all_posts', compact('posts'));
   });
-}]);
+// }]);
 
 Route::get('/home', 'HomeController@index');

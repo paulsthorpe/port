@@ -5896,9 +5896,12 @@ a:active {
       position: relative;
       display: inline-block;
       float: right;
-      max-width: 80%; }
+      max-width: 80%;
+      line-height: 160%; }
       .home .blog .post-entry .post-details * {
         color: #082a4f; }
+      .home .blog .post-entry .post-details h2 {
+        padding-bottom: 20px; }
 
 .home .contact {
   width: 100%;

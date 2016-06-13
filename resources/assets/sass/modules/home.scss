@@ -224,10 +224,14 @@ a:active {
         * {
           color: #082a4f;
         }
+        h2 {
+          padding-bottom: 20px;
+        }
         position: relative;
         display: inline-block;
         float: right;
         max-width: 80%;
+        line-height: 160%;
       }
 
 
