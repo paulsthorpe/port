@@ -15,8 +15,8 @@
 
   <?php
 
-  $image = '/images/ang2-laravel.jpg';
-  $title = 'Blog';
+  $image = '/images/blog-banner.png';
+  $title = '';
   $alt = 'There are no post to display';
 
   if(isset($cat)){
