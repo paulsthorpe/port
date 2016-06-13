@@ -98,6 +98,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   * {
     color: black;
   }
+  .sidebar-menu * {
+    color: #fff;
+  }
 </style>
 <script src="/js/app.js"></script>
 </body>

@@ -5872,6 +5872,34 @@ a:active {
   height: 80vh;
   margin: 0 auto; }
 
+.home .blog {
+  padding: 80px 20px;
+  width: 60%;
+  margin: 0 auto;
+  position: relative; }
+  .home .blog * {
+    color: #082a4f; }
+  .home .blog .blog-headline {
+    padding: 40px; }
+    .home .blog .blog-headline h3 {
+      padding: 20px 0; }
+  .home .blog .post-entry {
+    padding: 40px 0; }
+    .home .blog .post-entry .post-date {
+      position: relative;
+      display: inline-block;
+      float: left;
+      max-width: 15%; }
+      .home .blog .post-entry .post-date * {
+        color: #6c98b8; }
+    .home .blog .post-entry .post-details {
+      position: relative;
+      display: inline-block;
+      float: right;
+      max-width: 80%; }
+      .home .blog .post-entry .post-details * {
+        color: #082a4f; }
+
 .home .contact {
   width: 100%;
   height: 60vh;

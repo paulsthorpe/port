@@ -63,7 +63,63 @@
 
   </div>
 
-  <div class="projects">
+  <div class="blog">
+    <div class="blog-headline">
+      <h1>From My Blog</h1>
+      <h3>Project releases, web development wisdom and news</h3>
+    </div>
+    <div class="post-entry">
+      <div class="post-date">
+        <h1 class="day">14</h1>
+        <p class="m-d">Jun '16</p>
+      </div>
+      <div class="post-details">
+        <h2>Post Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+           minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. id est laborum.</p>
+      </div>
+      <div style="clear:both;">
+      </div>
+    </div>
+    <div class="post-entry">
+      <div class="post-date">
+        <h1 class="day">14</h1>
+        <p class="m-d">Jun '16</p>
+      </div>
+      <div class="post-details">
+        <h2>Post Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+           minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. id est laborum.</p>
+      </div>
+      <div style="clear:both;">
+      </div>
+    </div>
+    <div class="post-entry">
+      <div class="post-date">
+        <h1 class="day">14</h1>
+        <p class="m-d">Jun '16</p>
+      </div>
+      <div class="post-details">
+        <h2>Post Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+           minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. id est laborum.</p>
+      </div>
+      <div style="clear:both;">
+      </div>
+    </div>
+    <div class="post-entry">
+      <div class="post-date">
+        <h1 class="day">14</h1>
+        <p class="m-d">Jun '16</p>
+      </div>
+      <div class="post-details">
+        <h2>Post Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+           minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. id est laborum.</p>
+      </div>
+      <div style="clear:both;">
+      </div>
+    </div>
 
   </div>
 

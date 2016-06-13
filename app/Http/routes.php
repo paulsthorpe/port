@@ -29,18 +29,26 @@ Route::get('/post', function () {
     return view('blog.post');
 });
 
-Route::get('/admin', function () {
-    return view('admin.layout');
-});
 
-Route::get('/admin/add_post', function () {
-    $categories = App\Category::all();
-    return view('admin.add_post', compact('categories'));
-});
 
-Route::post('/admin/add_post', 'PostController@store');
+Route::auth();
 
-Route::get('/admin/all_posts', function () {
-    $posts = App\Post::orderBy('updated_at','DESC')->get();
-    return view('admin.all_posts', compact('posts'));
-});
+Route::get('profile', ['middleware' => 'auth', function() {
+  Route::get('/admin', function () {
+      return view('admin.layout');
+  });
+
+  Route::get('/admin/add_post', function () {
+      $categories = App\Category::all();
+      return view('admin.add_post', compact('categories'));
+  });
+
+  Route::post('/admin/add_post', 'PostController@store');
+
+  Route::get('/admin/all_posts', function () {
+      $posts = App\Post::orderBy('updated_at','DESC')->get();
+      return view('admin.all_posts', compact('posts'));
+  });
+}]);
+
+Route::get('/home', 'HomeController@index');

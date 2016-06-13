@@ -190,6 +190,51 @@ a:active {
     margin: 0 auto;
   }
 
+  .blog {
+    padding: 80px 20px;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+
+    * {
+      color: #082a4f;
+    }
+
+    .blog-headline {
+
+      padding: 40px;
+      h3 {
+        padding: 20px 0;
+      }//h3
+    }//headline
+
+    .post-entry {
+      padding: 40px 0;
+      .post-date {
+        * {
+          color: #6c98b8;
+        }
+        position: relative;
+        display: inline-block;
+        float: left;
+        max-width: 15%;
+      }
+
+      .post-details {
+        * {
+          color: #082a4f;
+        }
+        position: relative;
+        display: inline-block;
+        float: right;
+        max-width: 80%;
+      }
+
+
+    }
+
+  }//blog
+
   .contact {
     width: 100%;
     height: 60vh;
