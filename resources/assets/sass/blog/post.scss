@@ -1,7 +1,47 @@
 
 .blog-post {
-
+  overflow: hidden;
   font-family: 'Raleway', sans-serif;
+
+    .blog-nav {
+      width: 100vw;
+      height: 50px;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.2s, opacity 0.2s;
+      &:hover {
+        background-color: $darkblue;
+        opacity: 0.8;
+         > .nav-elements li a {
+          color: #6c98b8;
+        }
+      }//header_nav:hover
+
+      .nav-elements{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        li {
+          height: 100%;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          transition: all 0.2s;
+          a {
+            color: $darkblue;
+          }
+          &:hover {
+            border-bottom: 3px solid $lightblue;
+          }
+        }//li
+      }//nav-elements
+    }//blog-nav
   .post-splash {
     width: 100vw;
     height: 500px;
@@ -18,10 +58,12 @@
       width: 50%;
       display: block;
       text-align: center;
+
       .timestamp {
         flex: 1;
         display: inline-block;
         margin: 100px 150px 50px;
+        color: $white;
       }
       .btn {
         flex: 1;
@@ -40,18 +82,9 @@
     }
     pre {
 
-      // font-size: 1.3em;
-      // white-space: pre-wrap;
-      // padding: 0 50px;
-      // white-space: -moz-pre-wrap !important;
-      // white-space: -pre-wrap;
-      // white-space: -o-pre-wrap;
-      // word-wrap: break-word;
-      // overflow-x: hidden;
-      // overflow-y: hidden;
-      // border: 1px solid darken($bg, 1);
-      // font-family: inherit;
-      // background-color: $white;
+      font-size: 1.3em;
+      padding: 0 50px;
+
     }//pre
   }
   .sidebar {
@@ -115,7 +148,7 @@
   }//.btn-centerX::after
 
   .btn-centerX:hover::after {
-    width: 100%;
+    width: 108%;
     opacity: 1;
   }
 
@@ -157,4 +190,23 @@
     }
   }
 }//contact
+}
+
+@include smallPhone {
+  .blog-post {
+    .post-content {
+      .content {
+        padding: 20px 100px;
+        h1 {
+          padding: 20px 0;
+        }
+        pre {
+          font-size: 1.4em;
+          code {
+            // font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }
 }

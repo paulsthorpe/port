@@ -1,3 +1,5 @@
+
+
 a,
 a:link,
 a:visited,
@@ -25,7 +27,7 @@ a:active {
 
   .header_nav {
     width: 100%;
-    max-height: 50px;
+    height: 50px;
     opacity: 1;
     position: absolute;
     bottom: 0;
@@ -48,6 +50,8 @@ a:active {
       margin: 0 auto;
       list-style: none;
       text-align: center;
+      position: relative;
+      top: 0;
 
       .nav_element {
 
@@ -92,6 +96,7 @@ a:active {
 
     }//welcome_message
 
+
     .me {
 
       width: auto;
@@ -109,16 +114,23 @@ a:active {
       margin: 0;
       font-size: 22px;
       padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       .social_wrapper {
 
         height: 35px;
         width: 35px;
         border-radius: 50%;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
         z-index: +4;
         transition: background-color 0.2s;
+        margin: 0 15px;
+
 
         &:hover {
          background-color: #082a4f;
@@ -132,7 +144,7 @@ a:active {
         transition: color 0.2s;
         position: relative;
         z-index: +7;
-        padding-top: 8px;
+
 
         &:hover {
           color: #fff;
@@ -143,6 +155,8 @@ a:active {
     }//social
 
   }//welcome
+
+
 
   .skills {
 
@@ -232,11 +246,294 @@ a:active {
 
 }//home
 
+@include smallPhone {
+  .home {
+    .header_nav {
+      height: 100px;
+      bottom: 0px;
+      .nav_elements {
+        height: 100px;
+        width: 80%;
+        top: 0;
+        .nav_element {
+          height: 100px;
+          font-size: 2em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+        }
+      }
+    }
+    .welcome {
+      width: 100%;
+      .welcome_message {
+        width: 80%;
+        font-size: .7em;
+      }
+    }
+    .skills {
+      a {
+        text-decoration: underline;
+      }
+      .info_wrapper {
+        width: 80%;
+        font-size: 2.4em;
+        font-weight: 700;
+      }
+    }
+    .social_wrapper{
+      height: 50px;
+      width: 50px;
+      > a i {
+        font-size: 1.3em;
+      }
+    }
 
+    .contact {
+      height: 50vh;
+      .contact_info_wrapper {
+        width: 80%;
+        font-size: 2.3em;
+        font-weight: 400;
+      }
+      .social_contact a{
+        font-size: 1.5em;
+        padding: 25px 10px;
+        margin: 0 25px;
+      }
+    }
 
+  }
+}
 
+@include bigPhone {
+  .home {
+    .header_nav {
+      height: 100px;
+      bottom: 0px;
+      .nav_elements {
+        height: 100px;
+        width: 80%;
+        top: 0;
+        .nav_element {
+          height: 100px;
+          font-size: 2em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+        }
+      }
+    }
+    .welcome {
+      width: 100%;
 
+      .welcome_message {
+        width: 80%;
+        font-size: .57em;
+      }
 
+    }
+    .skills {
+      a {
+        text-decoration: underline;
+      }
+      .info_wrapper {
+        width: 80%;
+        font-size: 2.1em;
+        font-weight: 700;
+      }
+    }
+    .social_wrapper{
+      height: 50px;
+      width: 50px;
+      > a i {
+        font-size: 1.3em;
+      }
+    }
+
+    .contact {
+      height: 50vh;
+      .contact_info_wrapper {
+        width: 80%;
+        font-size: 2.0em;
+        font-weight: 400;
+      }
+      .social_contact a{
+        font-size: 1.5em;
+        padding: 25px 10px;
+        margin: 0 25px;
+      }
+    }
+
+  }
+}
+
+@include tablet {
+  .home {
+    .header_nav {
+      height: 100px;
+      bottom: 0px;
+      .nav_elements {
+        height: 100px;
+        width: 80%;
+        top: 0;
+        .nav_element {
+          height: 100px;
+          font-size: 2em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+        }
+      }
+    }
+    .welcome {
+      width: 100%;
+      .welcome_message {
+        width: 80%;
+        font-size: .555em;
+      }
+    }
+    .skills {
+      a {
+        text-decoration: underline;
+      }
+      .info_wrapper {
+        width: 80%;
+        font-size: 2.1em;
+        font-weight: 700;
+      }
+    }
+    .social_wrapper{
+      height: 50px;
+      width: 50px;
+      > a i {
+        font-size: 1.3em;
+      }
+    }
+
+    .contact {
+      height: 50vh;
+      .contact_info_wrapper {
+        width: 80%;
+        font-size: 2.0em;
+        font-weight: 400;
+      }
+      .social_contact a{
+        font-size: 1.5em;
+        padding: 25px 10px;
+        margin: 0 25px;
+      }
+    }
+
+  }
+}
+
+@include tabletLandscape {
+  .home {
+    .welcome {
+      .welcome_message {
+        font-size: .3em;
+      }
+    }
+    .skills {
+      .info_wrapper {
+        font-size: 1.4em;
+
+      }
+    }
+    .contact {
+      font-size: .6em;
+      // height: 80vh;
+    }
+  }
+}
+
+@include bigPhoneLandscape {
+  .home {
+
+    .header_nav {
+      height: 70px;
+      bottom: 0px;
+      .nav_elements {
+        height: 70px;
+        width: 80%;
+        top: 0;
+        .nav_element {
+          height: 70px;
+          font-size: 1em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+        }
+      }
+    }
+    .welcome {
+      padding-top: 1%;
+      .welcome_message {
+        font-size: .4em;
+      }
+      .me {
+        display: none;
+      }
+    }
+    .skills {
+      .info_wrapper {
+        font-size: 1.1em;
+
+      }
+    }
+    .contact {
+      font-size: .6em;
+      height: 80vh;
+    }
+  }
+}
+
+@include bigPhoneLandscapeRetina {
+  .home {
+
+    .header_nav {
+      height: 70px;
+      bottom: 0px;
+      .nav_elements {
+        height: 70px;
+        width: 80%;
+        top: 0;
+        .nav_element {
+          height: 70px;
+          font-size: 1em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+        }
+      }
+    }
+    .welcome {
+      padding-top: 1%;
+      .welcome_message {
+        font-size: .4em;
+      }
+      .me {
+        display: none;
+      }
+    }
+    .skills {
+      .info_wrapper {
+        font-size: 1.1em;
+
+      }
+    }
+    .contact {
+      font-size: .6em;
+      height: 80vh;
+    }
+  }
+}
 
 
 

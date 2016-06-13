@@ -14,12 +14,12 @@
 <section class="post-splash" style="background-image: url('/blog_images/{{$post->image}}')">
   <div class="post-meta">
 
-    <a href="/blog/{{($post->id-1)}}"><button class="btn btn-centerX"><i class="fa fa-chevron-left"></i> &nbsp Previous Article</button></a>
+    <a href="/blog/prev/{{$post->id}}"><button class="btn btn-centerX"><i class="fa fa-chevron-left"></i> &nbsp Previous Article</button></a>
     <div class="timestamp">
-      <i class="fa fa-calendar"></i>
-      {{$post->created_at->format('m-d-Y h:i:s A')}}
+      <i class="fa fa-calendar">&nbsp</i>
+      {{$post->created_at->format('M - d - Y')}}
     </div>
-    <a href="/blog/{{($post->id+1)}}"><button class="btn btn-centerX">Next Article <i class="fa fa-chevron-right"></i> </button></a>
+    <a href="/blog/next/{{$post->id}}"><button class="btn btn-centerX">Next Article <i class="fa fa-chevron-right"></i> </button></a>
   </div>
 </section>
 <section class="post-content">

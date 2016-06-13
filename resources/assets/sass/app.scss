@@ -1,8 +1,21 @@
+// Colors
+
+
+
+
+//Breakpoints
+// $largeDeviceMin : 1200px;
+// $mediumDeviceMax : 1199px;
+// $mediumDeviceMin : 768px;
+// $smallDeviceMax : 767px;
+// $nonRetina : '-webkit-min-device-pixel-ratio: 1';
+// $retina : ("(-webkit-min-device-pixel-ratio: 2)","(min-resolution: 192dpi)");
+
+
+
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "mixins";
 
 @import "modules/home";
-
-
 @import "blog/index";
 @import "blog/post";

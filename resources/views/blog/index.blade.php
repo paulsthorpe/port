@@ -15,7 +15,7 @@
 
   <?php
 
-  $image = '/images/blogIndex.png';
+  $image = '/images/ang2-laravel.jpg';
   $title = 'Blog';
   $alt = 'There are no post to display';
 
@@ -53,7 +53,7 @@
   </section>
 <div class="row">
   <section class="recent-posts col-lg-8 col-lg-offset-2">
-    <div class="row">
+    <div class="row content">
 
         @foreach($posts as $post)
           <div class="post-container col-lg-4 col-md-6 col-sm-6 col-xs-12">
@@ -95,7 +95,7 @@
 
 
   </section>
-  <div class="sidebar col-lg-2">
+  <div class="sidebar col-lg-2 col-sm-12">
     <div class="categories">
       <h2>Blog Categories</h2>
       <ul>

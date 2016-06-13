@@ -19,6 +19,10 @@ Route::get('/blog', 'PostController@index');
 
 Route::get('/blog/{post}', 'PostController@getPost');
 
+Route::get('/blog/next/{post}', 'PostController@next');
+
+Route::get('/blog/prev/{post}', 'PostController@prev');
+
 Route::get('/blog/category/{cat}', 'PostController@getCategory');
 
 Route::get('/post', function () {
