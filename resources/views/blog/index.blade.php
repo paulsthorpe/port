@@ -21,7 +21,7 @@
 
   if(isset($cat)){
     switch($cat->title):
-      case 'Angular2':
+      case 'Angular 2':
             $image = '/images/angularBanner.jpg';
             $title = $cat->title;
             break;
