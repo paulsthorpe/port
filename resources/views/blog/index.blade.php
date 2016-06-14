@@ -71,7 +71,7 @@
                   <br>
                   <span>Categories:</span>
                   @foreach($post->categories as $category)
-                  <a href="./blog/category/{{$category->id}}">{{$category->title}}</a>
+                  <a href="../../blog/category/{{$category->id}}">{{$category->title}}</a>
                   @endforeach
                 </div>
             </div>

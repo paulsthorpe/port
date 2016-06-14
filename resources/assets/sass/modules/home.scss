@@ -164,7 +164,8 @@ a:active {
     height: 100vh;
     position: relative;
     top: 0;
-    @include background-image-blue("/images/javascript-code.jpg");
+    @include background-image-blue("/images/laptop.png");
+
 
     .info_wrapper {
       width: 40%;
@@ -201,7 +202,7 @@ a:active {
     }
 
     .blog-headline {
-
+      text-align: center;
       padding: 40px;
       h3 {
         padding: 20px 0;

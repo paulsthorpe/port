@@ -51,14 +51,19 @@
   <div class="skills">
     <div class="info_wrapper">
       <p class="skills_header">My Skills</p>
-      <p>I desire to be fully capable of handling any task involved in the process of creating web sites or web applications (My Favorite!). In order to fulfill that desire I am constantly adding new tools to
-         my arsenal. I use HTML, CSS, Javascript/Jquery and recently <a href="http://angular.io"><strong>Angular 2</strong></a> to make things organized and sexy on the client facing side. Depending on the project I use Twitter's <a href="http://getbootstrap.com"><strong>Bootstrap</strong></a>,
-         <a href="http://susy.oddbird.net/"><strong>Susy</strong></a> or my own custom grids to create responsive layouts that look great on any device. </p>
+      <p>I aim to be fully capable of handling any task involved in the process of creating web sites or web applications (My Favorite!).
+        To fulfill that desire I am constantly adding new tools to my arsenal. I use HTML, CSS, Javascript/Jquery and recently
+        <a href="http://angular.io"><strong>Angular 2</strong></a> to make things organized and sexy on the client facing side. Per
+         the project you could find me using Twitter's <a href="http://getbootstrap.com"><strong>Bootstrap</strong></a>, <a href="http://susy.oddbird.net/">
+        <strong>Susy</strong></a> or my own custom grids to create responsive layouts that look great on any device.</p>
       <br></br>
-      <p>If a database is required for the project I employ MYSQL to store all data, and use PHP to access data safely and efficiently. I use modern PHP MVC frameworks like <a href="http://laravel.com"><strong>Laravel</strong></a> and Object Oriented practices to
-        make sure applications are efficient, reliable, easily manipulated and scalable. I love a great challenge, and get the most pleasure from projects heavily reliant on the server and data. Not too much in life gives me more pleasure than creating/working
-        with APIs, creating custom content management systems (Sorry Wordpress!), or organzing and coordinating data flow. PHP is a reliable and time tested technology. While it may not carry the most hype,
-        it is a solid foundation and is used in an estimated 82% of websites today. <a href="http://w3techs.com/technologies/details/pl-php/all/all"><strong>More on that</strong></a></p>
+      <p>If a database is required for the project I typically employ MYSQL to store all data, and use PHP to access data safely and efficiently.
+        I use modern PHP MVC frameworks like <a href="http://laravel.com"><strong>Laravel</strong></a> and Object Oriented practices to
+        make sure applications are efficient, reliable, easily manipulated and scalable. I love a great challenge, and get the most pleasure
+        from projects heavily reliant on the server and data. Not too much in life gives me more pleasure than creating/working
+        with APIs, creating custom content management systems (Sorry Wordpress!), or organzing and coordinating data flow. PHP is a
+        reliable and time tested technology. While it may not carry the most scene hype, it is a solid foundation and is used in an estimated 
+        82% of websites today. <a href="http://w3techs.com/technologies/details/pl-php/all/all"><strong>More on that</strong></a></p>
     </div>
 
   </div>

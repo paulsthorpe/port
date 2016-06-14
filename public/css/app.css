@@ -5850,7 +5850,7 @@ a:active {
   height: 100vh;
   position: relative;
   top: 0;
-  background: linear-gradient(to bottom, rgba(56, 104, 133, 0.3), rgba(8, 42, 79, 0.8)), url("/images/javascript-code.jpg");
+  background: linear-gradient(to bottom, rgba(56, 104, 133, 0.3), rgba(8, 42, 79, 0.8)), url("/images/laptop.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -5880,6 +5880,7 @@ a:active {
   .home .blog * {
     color: #082a4f; }
   .home .blog .blog-headline {
+    text-align: center;
     padding: 40px; }
     .home .blog .blog-headline h3 {
       padding: 20px 0; }
