@@ -211,6 +211,22 @@ a:active {
 
     .post-entry {
       padding: 40px 0;
+      transition: all 0.7s;
+      &:nth-child(odd){
+        transform: translateX(-900px);
+        opacity: 0;
+      }
+
+      &:nth-child(even){
+        transform: translateX(900px);
+        opacity: 0;
+      }
+
+      &.is-showing{
+        transform: translateX(0);
+        opacity: 1;
+      }
+
       .post-date {
         * {
           color: #6c98b8;
@@ -245,6 +261,9 @@ a:active {
           	-webkit-transform-style: preserve-3d;
           	-moz-transform-style: preserve-3d;
           	transform-style: preserve-3d;
+            i {
+              color: #6c98b8;
+            }
 
             &:before{
               position: absolute;
@@ -252,7 +271,7 @@ a:active {
               left: 0;
               width: 100%;
               height: 100%;
-              padding: 0 14px;
+              text-align: center;
               background: #6c98b8;
               color: #fff;
               content: attr(data-text);

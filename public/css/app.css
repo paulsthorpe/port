@@ -5885,7 +5885,17 @@ a:active {
     .home .blog .blog-headline h3 {
       padding: 20px 0; }
   .home .blog .post-entry {
-    padding: 40px 0; }
+    padding: 40px 0;
+    transition: all 0.7s; }
+    .home .blog .post-entry:nth-child(odd) {
+      transform: translateX(-900px);
+      opacity: 0; }
+    .home .blog .post-entry:nth-child(even) {
+      transform: translateX(900px);
+      opacity: 0; }
+    .home .blog .post-entry.is-showing {
+      transform: translateX(0);
+      opacity: 1; }
     .home .blog .post-entry .post-date {
       position: relative;
       display: inline-block;
@@ -5913,13 +5923,15 @@ a:active {
           transition: transform 0.3s;
           transform-origin: 50% 0;
           transform-style: preserve-3d; }
+          .home .blog .post-entry .post-details h2 a i {
+            color: #6c98b8; }
           .home .blog .post-entry .post-details h2 a:before {
             position: absolute;
             top: 100%;
             left: 0;
             width: 100%;
             height: 100%;
-            padding: 0 14px;
+            text-align: center;
             background: #6c98b8;
             color: #fff;
             content: attr(data-text);

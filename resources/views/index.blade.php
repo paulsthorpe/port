@@ -83,7 +83,7 @@
         <p class="m-d">{{Carbon\Carbon::parse($post->created_at)->format('M Y')}}</p>
       </div>
       <div class="post-details">
-        <h2><a data-text="{{$post->title}}" href="/blog/{{$post->id}}">{{$post->title}}</a></h2>
+        <h2><a data-text="{{$post->title}}" href="/blog/{{$post->id}}">{{$post->title}} &nbsp <i class="fa fa-chevron-right"></i></a></h2>
         <p>{{substr($post->body,0,200)}}...</p>
       </div>
       <div style="clear:both;">
@@ -121,7 +121,24 @@
     $(this).text('Projects');
   });
 
-  $('')
+  function landBlogExerpts(){
+    var scrollFactor = $(window).scrollTop();
+    var excerpts = $('.post-entry').length;
+    var entries = [];
+    for (var i = 0; i < excerpts; i++){
+      entries[i] = $('.post-entry').eq(i).offset().top - ($(window).height() / 1.2);
+    }
+
+    for (var i = 0; i < excerpts; i++){
+      if (scrollFactor > entries[i]){
+        $('.post-entry').eq(i).addClass('is-showing');
+      }
+    }
+  }
+  $(window).scroll(function(){
+    landBlogExerpts();
+  });
+
 </script>
 
 
