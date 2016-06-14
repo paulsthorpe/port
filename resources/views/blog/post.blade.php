@@ -1,5 +1,11 @@
 @extends('blog.master')
 <?php use GrahamCampbell\Markdown\Facades\Markdown; ?>
+@section('title')
+{{$post->title}}
+@endsection
+@section('tags')
+{{$post->tags}}
+@endsection
 @section('content')
 <div class="blog-post">
 
