@@ -5913,7 +5913,8 @@ a:active {
       width: 80%;
       line-height: 160%; }
       .home .blog .post-entry .post-details * {
-        color: #082a4f; }
+        color: #082a4f;
+        overflow: visible; }
       .home .blog .post-entry .post-details h2 {
         padding-bottom: 20px;
         perspective: 1000px; }
@@ -5936,7 +5937,7 @@ a:active {
             height: 100%;
             text-align: center;
             background: #6c98b8;
-            color: #fff;
+            color: #333;
             content: attr(data-text);
             transition: background 0.3s;
             transform: rotateX(-90deg);

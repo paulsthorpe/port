@@ -178,7 +178,7 @@ a:active {
       font-weight: 200;
       font-size: 20px;
       line-height: 1.4em;
-      
+
       * {
         overflow: visible;
       }
@@ -247,6 +247,7 @@ a:active {
       .post-details {
         * {
           color: #082a4f;
+          overflow: visible;
         }
         h2 {
           padding-bottom: 20px;
@@ -280,7 +281,7 @@ a:active {
               height: 100%;
               text-align: center;
               background: #6c98b8;
-              color: #fff;
+              color: #333;
               content: attr(data-text);
               -webkit-transition: background 0.3s;
               -moz-transition: background 0.3s;
@@ -534,6 +535,7 @@ a:active {
         }
       }
     }
+
     .welcome {
       width: 100%;
 
