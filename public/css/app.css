@@ -5793,7 +5793,7 @@ a:active {
   width: 60%;
   height: 100vh;
   margin: 0 auto;
-  padding-top: 7.5%;
+  padding-top: 5%;
   text-align: center;
   color: #fff;
   font-weight: lighter;
@@ -5902,7 +5902,33 @@ a:active {
       .home .blog .post-entry .post-details * {
         color: #082a4f; }
       .home .blog .post-entry .post-details h2 {
-        padding-bottom: 20px; }
+        padding-bottom: 20px;
+        perspective: 1000px; }
+        .home .blog .post-entry .post-details h2 a {
+          line-height: 150%;
+          position: relative;
+          display: inline-block;
+          padding: 0 14px;
+          background: #fff;
+          transition: transform 0.3s;
+          transform-origin: 50% 0;
+          transform-style: preserve-3d; }
+          .home .blog .post-entry .post-details h2 a:before {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0 14px;
+            background: #6c98b8;
+            color: #fff;
+            content: attr(data-text);
+            transition: background 0.3s;
+            transform: rotateX(-90deg);
+            transform-origin: 50% 0; }
+        .home .blog .post-entry .post-details h2:hover a,
+        .home .blog .post-entry .post-details h2:focus a {
+          transform: rotateX(90deg) translateY(-60px); }
 
 .home .contact {
   width: 100%;

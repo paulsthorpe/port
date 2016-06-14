@@ -28,9 +28,12 @@
   <div class="welcome">
   <p>Welcome!</p>
   <p class="welcome_message">
-   <br>Hello! My name is Paul Thorpe and I love Web Development...and fishing, my family, good beer, good food, good company...anyways... </p>
+   <br>Hello! My name is Paul Thorpe and I love Web Development...and my family, fishing, craft beer, good food, good company...anyways... </p>
    <img src="images/me.png" alt="" class="me">
-   <p class="welcome_message">I have a diverse and ever increasing skill set, to ensure that I can handle most aspects of the web development process. HTML5, CSS3, Bootstrap, Javascript, Jquery, PHP and MYSQL are all tools I use on a regular basis, but if a problem comes along that requires learning a new skill, I do so with enthusiasm. <br></br> From responsive front-end designs to server-side PHP,<br><strong>I LOVE IT ALL!</strong></p>
+   <p class="welcome_message">I have a diverse skill set that is constantly increasing to ensure that I can handle most aspects of the web
+     development process. I also have a serious addiction to learning. HTML5, CSS3, Bootstrap, Javascript, Jquery, PHP and MYSQL are all tools I use on a regular basis, but if a problem
+     comes along that requires learning a new skill, I will pick it up with enthusiasm. <br></br> From responsive front-end designs to server-side PHP,<br>
+     <strong>I LOVE IT ALL!</strong></p>
 
   <div class="social">
     <div class="social_wrapper">
@@ -62,7 +65,7 @@
         make sure applications are efficient, reliable, easily manipulated and scalable. I love a great challenge, and get the most pleasure
         from projects heavily reliant on the server and data. Not too much in life gives me more pleasure than creating/working
         with APIs, creating custom content management systems (Sorry Wordpress!), or organzing and coordinating data flow. PHP is a
-        reliable and time tested technology. While it may not carry the most scene hype, it is a solid foundation and is used in an estimated 
+        reliable and time tested technology. While it may not carry the most scene hype, it is a solid foundation and is used in an estimated
         82% of websites today. <a href="http://w3techs.com/technologies/details/pl-php/all/all"><strong>More on that</strong></a></p>
     </div>
 
@@ -80,7 +83,7 @@
         <p class="m-d">{{Carbon\Carbon::parse($post->created_at)->format('M Y')}}</p>
       </div>
       <div class="post-details">
-        <h2><a href="/blog/{{$post->id}}">{{$post->title}}</a></h2>
+        <h2><a data-text="{{$post->title}}" href="/blog/{{$post->id}}">{{$post->title}}</a></h2>
         <p>{{substr($post->body,0,200)}}...</p>
       </div>
       <div style="clear:both;">
@@ -117,6 +120,8 @@
   }, function(){
     $(this).text('Projects');
   });
+
+  $('')
 </script>
 
 
