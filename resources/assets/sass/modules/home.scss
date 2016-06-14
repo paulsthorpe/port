@@ -366,6 +366,7 @@ a:active {
 
 @include smallPhone {
   .home {
+    width: 100vw;
     .header_nav {
       height: 100px;
       bottom: 0px;
