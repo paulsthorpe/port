@@ -5896,7 +5896,7 @@ a:active {
       position: relative;
       display: inline-block;
       float: right;
-      max-width: 80%;
+      width: 80%;
       line-height: 160%; }
       .home .blog .post-entry .post-details * {
         color: #082a4f; }
@@ -6493,7 +6493,13 @@ a:active {
       color: black; }
     .blog-post .post-content pre {
       font-size: 1.3em;
-      padding: 0 50px; }
+      padding: 0 50px;
+      overflow-x: scroll;
+      overflow-y: scroll; }
+      .blog-post .post-content pre code {
+        font-size: inherit;
+        overflow-x: scroll;
+        overflow-y: scroll; }
   .blog-post .sidebar h2 {
     color: #252525; }
   .blog-post .sidebar ul {
@@ -6572,6 +6578,25 @@ a:active {
     .blog-post .post-content .content h1 {
       padding: 20px 0; }
     .blog-post .post-content .content pre {
-      font-size: 1.4em; } }
+      font-size: 1.3em;
+      padding: 0 50px;
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap !important;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      overflow-x: scroll; }
+      .blog-post .post-content .content pre .hljs {
+        display: inline-block;
+        overflow-x: scroll;
+        padding: 0.5em;
+        padding-right: 100%;
+        background: #002b36;
+        color: #839496;
+        -webkit-text-size-adjust: none;
+        width: 2000px; }
+      .blog-post .post-content .content pre code {
+        overflow-x: scroll; }
+        .blog-post .post-content .content pre code .hljs-tag {
+          font-size: 1.3em; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -9,6 +9,8 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/monokai-sublime.css">
+    <meta name="type" content="article">
+    <meta name="article:published_time" content=" @yield('published_at')">
     <meta name="description" content=" @yield('tags') ">
     <script src="/js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
