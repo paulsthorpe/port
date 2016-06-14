@@ -76,7 +76,7 @@
       </div>
       <div class="post-details">
         <h2><a href="/blog/{{$post->id}}">{{$post->title}}</a></h2>
-        <p>{{substr($post->body,0,150)}}...</p>
+        <p>{{substr($post->body,0,200)}}...</p>
       </div>
       <div style="clear:both;">
       </div>
