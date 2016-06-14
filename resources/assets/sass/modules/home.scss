@@ -9,6 +9,8 @@ a:active {
 }
 
 .home {
+  overflow: hidden;
+  
   * {
     margin: 0;
     padding: 0;
@@ -367,6 +369,7 @@ a:active {
 @include smallPhone {
   .home {
     width: 100vw;
+    overflow: hidden;
     .header_nav {
       height: 100px;
       bottom: 0px;
