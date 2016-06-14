@@ -9,15 +9,15 @@ a:active {
 }
 
 .home {
-  overflow: hidden;
-  
+
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     color: #fff;
-    width: 100vw;
+    overflow: hidden;
   }//*
 
   a,
@@ -368,8 +368,11 @@ a:active {
 
 @include smallPhone {
   .home {
-    width: 100vw;
-    overflow: hidden;
+
+    * {
+      overflow: hidden;
+    }
+    
     .header_nav {
       height: 100px;
       bottom: 0px;
