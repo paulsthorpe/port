@@ -27,6 +27,7 @@
     <div class="content col-lg-8 col-sm-12 col-lg-offset-1">
         <h1>{{$post->title}}</h1>
         <?php echo $formattedBody; ?>
+        <div class="fb-comments" data-href="http://paulthorpe.co/blog/1" data-width="100%"></div>
     </div>
     <div class="sidebar col-lg-2">
       <!-- <div class="recent">
