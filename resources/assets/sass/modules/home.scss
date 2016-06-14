@@ -17,7 +17,6 @@ a:active {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     color: #fff;
-    overflow: hidden;
   }//*
 
   a,
@@ -179,10 +178,6 @@ a:active {
       font-size: 20px;
       line-height: 1.4em;
 
-      * {
-        overflow: visible;
-      }
-
       .skills_header{
         font-size: 2.5em;
         padding-bottom: 35px;
@@ -203,7 +198,7 @@ a:active {
     width: 60%;
     margin: 0 auto;
     position: relative;
-
+    overflow: hidden;
     * {
       color: #082a4f;
     }
@@ -320,9 +315,7 @@ a:active {
     height: 60vh;
     position: relative;
     top: 0;
-    * {
-      overflow: visible;
-    }
+
     @include background-image-blue('/images/contact.jpg');
     .contact_info_wrapper {
       width: 40%;
@@ -377,10 +370,6 @@ a:active {
 @include smallPhone {
   .home {
 
-    * {
-      overflow: hidden;
-    }
-
     .header_nav {
       height: 100px;
       bottom: 0px;
@@ -427,7 +416,7 @@ a:active {
       width: 85%;
       margin: 0 auto;
       position: relative;
-
+      overflow: hidden;
       * {
         color: #082a4f;
       }
@@ -512,7 +501,6 @@ a:active {
         margin: 0 25px;
       }
     }
-
   }
 }
 

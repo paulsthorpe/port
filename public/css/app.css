@@ -5745,8 +5745,7 @@ a:active {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-  color: #fff;
-  overflow: hidden; }
+  color: #fff; }
 
 .home a,
 .home a:link,
@@ -5863,8 +5862,6 @@ a:active {
     font-weight: 200;
     font-size: 20px;
     line-height: 1.4em; }
-    .home .skills .info_wrapper * {
-      overflow: visible; }
     .home .skills .info_wrapper .skills_header {
       font-size: 2.5em;
       padding-bottom: 35px;
@@ -5879,7 +5876,8 @@ a:active {
   padding: 80px 20px;
   width: 60%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .home .blog * {
     color: #082a4f; }
   .home .blog .blog-headline {
@@ -5955,8 +5953,6 @@ a:active {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
-  .home .contact * {
-    overflow: visible; }
   .home .contact .contact_info_wrapper {
     width: 40%;
     height: auto;
@@ -5993,8 +5989,6 @@ a:active {
   background-attachment: bottom; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 650px) and (-webkit-min-device-pixel-ratio: 2) {
-  .home * {
-    overflow: hidden; }
   .home .header_nav {
     height: 100px;
     bottom: 0px; }
@@ -6031,7 +6025,8 @@ a:active {
     padding: 80px 20px;
     width: 85%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .home .blog * {
       color: #082a4f; }
     .home .blog .blog-headline {
