@@ -5792,7 +5792,7 @@ a:active {
 
 .home .welcome {
   width: 60%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   padding-top: 5%;
   text-align: center;
@@ -5857,16 +5857,18 @@ a:active {
   background-size: cover; }
   .home .skills .info_wrapper {
     width: 40%;
-    height: auto;
     margin: 0 auto;
     padding-top: 10%;
     text-align: center;
     font-weight: 200;
     font-size: 20px;
     line-height: 1.4em; }
+    .home .skills .info_wrapper * {
+      overflow: visible; }
     .home .skills .info_wrapper .skills_header {
       font-size: 2.5em;
-      padding-bottom: 35px; }
+      padding-bottom: 35px;
+      margin-top: 8px; }
 
 .home .projects {
   width: 100%;
@@ -5952,6 +5954,8 @@ a:active {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  .home .contact * {
+    overflow: visible; }
   .home .contact .contact_info_wrapper {
     width: 40%;
     height: auto;
@@ -6017,7 +6021,55 @@ a:active {
   .home .skills .info_wrapper {
     width: 80%;
     font-size: 2.4em;
-    font-weight: 700; }
+    font-weight: 400; }
+    .home .skills .info_wrapper * {
+      overflow: visible; }
+    .home .skills .info_wrapper .skills_header {
+      font-weight: 400; }
+  .home .blog {
+    padding: 80px 20px;
+    width: 85%;
+    margin: 0 auto;
+    position: relative; }
+    .home .blog * {
+      color: #082a4f; }
+    .home .blog .blog-headline {
+      text-align: center;
+      padding: 40px; }
+      .home .blog .blog-headline h3 {
+        padding: 20px 0; }
+    .home .blog .post-entry {
+      padding: 40px 0;
+      transition: all 0.7s; }
+      .home .blog .post-entry:nth-child(odd) {
+        transform: translateX(-900px);
+        opacity: 0; }
+      .home .blog .post-entry:nth-child(even) {
+        transform: translateX(900px);
+        opacity: 0; }
+      .home .blog .post-entry.is-showing {
+        transform: translateX(0);
+        opacity: 1; }
+      .home .blog .post-entry .post-date {
+        position: relative;
+        display: inline-block;
+        float: left;
+        max-width: 15%; }
+        .home .blog .post-entry .post-date * {
+          color: #6c98b8; }
+      .home .blog .post-entry .post-details {
+        position: relative;
+        display: inline-block;
+        float: right;
+        width: 80%;
+        line-height: 160%; }
+        .home .blog .post-entry .post-details * {
+          color: #082a4f; }
+        .home .blog .post-entry .post-details h2 {
+          padding-bottom: 20px; }
+          .home .blog .post-entry .post-details h2:hover a,
+          .home .blog .post-entry .post-details h2:focus a {
+            transform: rotateX(0); }
   .home .social_wrapper {
     height: 50px;
     width: 50px; }
@@ -6062,7 +6114,9 @@ a:active {
   .home .skills .info_wrapper {
     width: 80%;
     font-size: 2.1em;
-    font-weight: 700; }
+    font-weight: 400; }
+    .home .skills .info_wrapper * {
+      overflow: visible; }
   .home .social_wrapper {
     height: 50px;
     width: 50px; }
@@ -6107,7 +6161,9 @@ a:active {
   .home .skills .info_wrapper {
     width: 80%;
     font-size: 2.1em;
-    font-weight: 700; }
+    font-weight: 400; }
+    .home .skills .info_wrapper * {
+      overflow: visible; }
   .home .social_wrapper {
     height: 50px;
     width: 50px; }
@@ -6129,6 +6185,8 @@ a:active {
     font-size: .3em; }
   .home .skills .info_wrapper {
     font-size: 1.4em; }
+    .home .skills .info_wrapper * {
+      overflow: visible; }
   .home .contact {
     font-size: .6em; } }
 
@@ -6158,9 +6216,13 @@ a:active {
       display: none; }
   .home .skills .info_wrapper {
     font-size: 1.1em; }
+    .home .skills .info_wrapper * {
+      overflow: visible; }
   .home .contact {
     font-size: .6em;
-    height: 80vh; } }
+    height: 80vh; }
+    .home .contact * {
+      overflow: visible; } }
 
 @media only screen and (min-device-width: 651px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .home .header_nav {
@@ -6188,9 +6250,13 @@ a:active {
       display: none; }
   .home .skills .info_wrapper {
     font-size: 1.1em; }
+    .home .skills .info_wrapper * {
+      overflow: visible; }
   .home .contact {
     font-size: .6em;
-    height: 80vh; } }
+    height: 80vh; }
+    .home .contact * {
+      overflow: visible; } }
 
 .gearLoadSpace {
   position: relative;

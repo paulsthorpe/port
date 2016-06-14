@@ -32,8 +32,8 @@
    <img src="images/me.png" alt="" class="me">
    <p class="welcome_message">I have a diverse skill set that is constantly increasing to ensure that I can handle most aspects of the web
      development process. I also have a serious addiction to learning. HTML5, CSS3, Bootstrap, Javascript, Jquery, PHP and MYSQL are all tools I use on a regular basis, but if a problem
-     comes along that requires learning a new skill, I will pick it up with enthusiasm. <br></br> From responsive front-end designs to server-side PHP,<br>
-     <strong>I LOVE IT ALL!</strong></p>
+     comes along that requires learning a new skill, I will pick it up with enthusiasm. <br></br> From responsive front-end designs to server-side architecture,<br>
+     I LOVE IT ALL</p>
 
   <div class="social">
     <div class="social_wrapper">
@@ -95,9 +95,12 @@
 
 <div id="contact" class="contact">
   <div class="contact_info_wrapper">
-    <p class="contact_header">Lets Get In Touch!</p>
-    <p>Have a website or project concept for personal or business use that you want to see become a reality? Need help updating an old website or want to add new features?
-    <br></br>Just want to chat about new and exciting web technologies?<br></br>Have a hole in your company that you are looking to fill with a responsible, passionate developer looking to grow and adhere to best practices? I am available for full time employment, or contract work!</p>
+    <p class="contact_header">Get In Touch</p>
+    <p>Have a website or project concept for personal or business use that you want to see become a reality? Need help updating an old
+      website or want to add new features?
+    <br></br>Just want to chat about new and exciting web technologies?<br></br>
+    Have a hole in your company that you are looking to fill with a responsible,
+    passionate developer looking to grow and adhere to best practices? I am available for full time employment, or contract work!</p>
   </div>
   <div class="social_contact">
     <a href="https://www.facebook.com/profile.php?id=100009881742914"><i class="fa fa-facebook-square"></i></a>
