@@ -30,7 +30,7 @@
             $title = '';
             break;
       case 'Javascript':
-            $image = '/images/jsBanner.jpg';
+            $image = '/images/jsBanner.png';
             $title = '';
             break;
       case 'PHP':
