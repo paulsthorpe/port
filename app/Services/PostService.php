@@ -54,6 +54,7 @@ class PostService {
         $post->title = $request->title;
         $post->body = $request->body;
         $post->tags = $request->tags;
+        $post->slug = str_slug($post_title);
         //store image name to pass to image field
         $imageName = $request->file('image')->getClientOriginalName();
         //move imave to directory
