@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GrahamCampbell\Markdown\Facades\Markdown;
 
+use Session;
 use App\Http\Requests;
 use App\Post;
 use App\Category;
@@ -22,6 +23,7 @@ class PostController extends Controller
 
   public function store(Request $request) {
     $this->postService->store($request);
+    Session::flash('flash_message', 'Success');
     return redirect('/admin');
   }
 
@@ -63,6 +65,19 @@ class PostController extends Controller
     $formattedBody = Markdown::convertToHtml($post->body);
     $categories = Category::all();
     return view('blog.post', compact('post','categories','formattedBody'));
+  }
+
+  public function edit($id){
+    $post = Post::where('id', $id)->firstOrFail();
+    $categories = Category::all();
+    return view('admin.edit_post', compact('post','categories'));
+  }
+
+  public function patch($id,Request $request){
+    $post = Post::where('id', $id)->firstOrFail();
+    $this->postService->patch($post,$request);
+    Session::flash('flash_message', 'Success');
+    return redirect('/admin');
   }
 
 

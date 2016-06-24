@@ -20,12 +20,12 @@
           <td>{{$post->id}}</td>
           <td>{{$post->title}}</td>
           <td>
-            <a href="/add_post/{{$post->id}}">
+            <a href="/admin/edit_post/{{$post->id}}">
               <button>Edit this Post</button>
             </a>
           </td>
           <td>
-            <a href="/blog/{{$post->id}}">
+            <a href="/blog/{{$post->slug}}">
               <button>View this Post</button>
             </a>
           </td>

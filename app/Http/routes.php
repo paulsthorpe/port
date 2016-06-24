@@ -53,6 +53,10 @@ Route::group(['middleware' => 'auth'], function(){
       return view('admin.all_posts', compact('posts'));
   });
 
+  Route::get('/admin/edit_post/{id}', 'PostController@edit');
+
+  Route::patch('/admin/edit_post/{id}', 'PostController@patch');
+
 });
 
 Route::get('/home', 'HomeController@index');
