@@ -51,8 +51,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           <li class="dropdown user user-menu">
             <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="hidden-xs">Alexander Pierce</span>
+            <a href="/logout" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="hidden-xs">Logout</span>
             </a>
       </div>
     </nav>
