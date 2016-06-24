@@ -34,6 +34,8 @@ Route::get('/post', function () {
 
 Route::auth();
 
+Route::group(['middleware' => 'auth'], function(){
+
 // Route::get('profile', ['middleware' => 'auth', function() {
   Route::get('/admin', function () {
       return view('admin.layout');
@@ -50,6 +52,7 @@ Route::auth();
       $posts = App\Post::orderBy('updated_at','DESC')->get();
       return view('admin.all_posts', compact('posts'));
   });
-// }]);
+
+});
 
 Route::get('/home', 'HomeController@index');
