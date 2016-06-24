@@ -6597,11 +6597,10 @@ a:active {
       color: black; }
     .blog-post .post-content pre {
       font-size: 1.3em;
-      padding: 0 50px;
-      overflow-x: scroll;
-      overflow-y: scroll; }
+      padding: 0 50px; }
       .blog-post .post-content pre code {
         font-size: inherit;
+        white-space: pre;
         overflow-x: scroll;
         overflow-y: scroll; }
   .blog-post .sidebar h2 {
