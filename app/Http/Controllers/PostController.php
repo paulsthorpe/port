@@ -32,8 +32,8 @@ class PostController extends Controller
     return view('blog.index', compact('posts','categories'));
   }
 
-  public function getPost(Post $post) {
-
+  public function getPost($slug) {
+    $post = Post::where('slug', $slug)->firstOrFail();
     $formattedBody = Markdown::convertToHtml($post->body);
     $categories = Category::all();
     return view('blog.post', compact('post','categories','formattedBody'));

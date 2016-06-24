@@ -57,7 +57,7 @@
 
         @foreach($posts as $post)
           <div class="post-container col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <a href="/blog/{{$post->id}}">
+            <a href="/blog/{{$post->slug}}">
               <div class="post">
                 <div class="img" style="background-image: url('/blog_images/{{$post->image}}')">
                 </div>

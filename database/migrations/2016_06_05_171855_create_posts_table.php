@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->boolean('draft');
             $table->timestamps();
         });
+
     }
 
     /**

@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Route::get('/blog', 'PostController@index');
 
-Route::get('/blog/{post}', 'PostController@getPost');
+Route::get('/blog/{slug}', 'PostController@getPost');
 
 Route::get('/blog/next/{post}', 'PostController@next');
 
