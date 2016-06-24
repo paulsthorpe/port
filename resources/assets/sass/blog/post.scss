@@ -83,7 +83,7 @@
     pre {
 
       font-size: 1.3em;
-      
+
       code {
         font-size: inherit;
         white-space: pre;
@@ -208,32 +208,13 @@
         pre {
 
           font-size: 1.3em;
-          padding: 0 50px;
-          white-space: pre-wrap;
-        	white-space: -moz-pre-wrap !important;
-        	white-space: -pre-wrap;
-        	white-space: -o-pre-wrap;
 
-          overflow-x: scroll;
-          .hljs {
-      display: inline-block;
-      overflow-x: scroll;
-      padding: 0.5em;
-      padding-right: 100%;
-      background: #002b36;
-      color: #839496;
-      -webkit-text-size-adjust: none;
-      width: 2000px;
-}
           code {
-
+            font-size: inherit;
+            white-space: pre;
             overflow-x: scroll;
-
-            .hljs-tag {
-              font-size: 1.3em;
-            }
+            overflow-y: scroll;
           }
-
         }//pre
       }
     }
