@@ -31,7 +31,7 @@ Route::get('/post', function () {
 });
 
 Route::get('/google4ff0739b039c1218.html', function(){
-  return view('google4ff0739b039c1218');
+  return view('google4ff0739b039c1218.html');
 });
 
 Route::auth();
