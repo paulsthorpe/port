@@ -67,7 +67,7 @@
             </a>
                 <div class="tags">
                   <span>Date:</span>
-                  {{$post->updated_at->format('m-d-Y')}}
+                  {{$post->created_at->format('m-d-Y')}}
                   <br>
                   <span>Categories:</span>
                   @foreach($post->categories as $category)
