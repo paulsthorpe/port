@@ -6607,8 +6607,8 @@ a:active {
   .blog-post .sidebar ul {
     list-style: none; }
     .blog-post .sidebar ul li {
-      display: -ms-flexbox;
-      display: flex; }
+      text-align: center;
+      margin-bottom: 8px; }
       .blog-post .sidebar ul li a {
         color: #252525; }
         .blog-post .sidebar ul li a:hover {
