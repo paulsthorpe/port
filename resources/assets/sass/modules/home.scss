@@ -56,7 +56,7 @@ a:active {
       top: 0;
 
       .nav_element {
-
+        position: relative;
         display: inline-block;
         width: 25%;
         float: left;
@@ -71,6 +71,32 @@ a:active {
           padding-top: 17px;
           opacity: 1;
         }//nav_element&:hover
+
+        &:nth-child(2) {
+          ul{
+            background-color: #082a4f;
+            opacity: 0.8;
+            list-style: none;
+            position: relative;
+            top: -240px;
+            max-height: 0;
+            overflow: hidden;
+            li {
+              padding: 10px;
+              height: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &:hover{
+                background-color: darken(#082a4f,10%);
+
+              }
+              a {
+                color: #6c98b8;
+              }
+            }
+          }
+        }
 
       }//nav_element
 

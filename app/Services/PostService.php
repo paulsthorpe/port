@@ -74,7 +74,7 @@ class PostService {
 
       }//store method
 
-      public static function patch($post,$request) {
+      public static function patch($post,Request $request) {
 
         //assign data
         $post->id = $post->id;

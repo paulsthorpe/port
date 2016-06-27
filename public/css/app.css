@@ -5777,6 +5777,7 @@ a:active {
     position: relative;
     top: 0; }
     .home .header_nav .nav_elements .nav_element {
+      position: relative;
       display: inline-block;
       width: 25%;
       float: left;
@@ -5788,6 +5789,27 @@ a:active {
         border-top: 3px solid #6c98b8;
         padding-top: 17px;
         opacity: 1; }
+      .home .header_nav .nav_elements .nav_element:nth-child(2) ul {
+        background-color: #082a4f;
+        opacity: 0.8;
+        list-style: none;
+        position: relative;
+        top: -240px;
+        max-height: 0;
+        overflow: hidden; }
+        .home .header_nav .nav_elements .nav_element:nth-child(2) ul li {
+          padding: 10px;
+          height: 50px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .home .header_nav .nav_elements .nav_element:nth-child(2) ul li:hover {
+            background-color: #031121; }
+          .home .header_nav .nav_elements .nav_element:nth-child(2) ul li a {
+            color: #6c98b8; }
 
 .home .welcome {
   width: 60%;
