@@ -23,8 +23,9 @@
             <li><a href="http://bugwild.paul-webdev.com/">Bugwild</a></li>
             <li><a href="http://paul-webdev.com/">Restaurant Order System</a></li>
             <li><a href="http://timeclock.paul-webdev.com/">Timeclock</a></li>
-            <li><a href="https://github.com/paulsthorpe?tab=repositories">
-              Github
+            <li>
+              <a href="https://github.com/paulsthorpe?tab=repositories">
+                Github
               </a>
             </li>
           </ul>
