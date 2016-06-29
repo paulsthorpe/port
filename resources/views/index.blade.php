@@ -66,7 +66,7 @@
     <div class="info_wrapper">
       <p class="skills_header">My Skills</p>
       <p>I aim to be fully capable of handling any task involved in the process of creating web sites or web applications (My Favorite!).
-        To fulfill that desire I am constantly adding new tools to my arsenal. I use HTML, CSS, Javascript/Jquery and recently
+        To fulfill that desire I am constantly adding new tools to my arsenal. I use HTML, CSS/Sass, Javascript/Jquery and recently
         <a href="http://angular.io"><strong>Angular 2</strong></a> to make things organized and sexy on the client facing side. Per
          the project you could find me using Twitter's <a href="http://getbootstrap.com"><strong>Bootstrap</strong></a>, <a href="http://susy.oddbird.net/">
         <strong>Susy</strong></a> or my own custom grids to create responsive layouts that look great on any device.</p>
