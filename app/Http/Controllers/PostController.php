@@ -48,6 +48,10 @@ class PostController extends Controller
         return redirect('/admin');
     }
 
+    public function edit(Post $id){
+      return view('admin.edit_post', compact('post'));
+    }
+
 
     /**
      * serve add post form

@@ -48,6 +48,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/admin/all_posts', 'PostController@index');
 
+    Route::get('/admin/edit_post/{post}', 'PostController@edit');
+
     Route::post('/admin/add_post', 'PostController@save');
 
     Route::patch('/admin/edit_post', 'PostController@patch');

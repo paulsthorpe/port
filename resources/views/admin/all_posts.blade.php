@@ -34,7 +34,6 @@
               {{ csrf_field() }}
               {{ method_field('DELETE') }}
               <input type="hidden" name="post_id" value="{{$post->id}}">
-              <button onclick='return confirm("Are you sure you want to delete $post->post_title?")'>Delete this Post</button>
               <input type="submit" name="name" value="Delete Post" onclick='return confirm("Are you sure you want to delete $post->post_title?")'>
             </form>
           </td>
