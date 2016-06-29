@@ -14,72 +14,76 @@ use App\Services\PostService;
 class PostController extends Controller
 {
 
-  //inject PostService
-  public function __construct(PostService $PostService){
+    /**
+     * Inject Post Service
+     * PostController constructor.
+     * @param PostService $PostService
+     */
+    public function __construct(PostService $PostService)
+    {
 
-    $this->postService = $PostService;
+        $this->postService = $PostService;
 
-  }
-
-  public function store(Request $request) {
-    $this->postService->store($request);
-    Session::flash('flash_message', 'Success');
-    return redirect('/admin');
-  }
-
-  public function index(){
-    // $posts = Post::where('draft', 1)->orderBy('updated_at', 'DESC');
-    $posts = Post::with('categories')->paginate(9);
-    $categories = Category::all();
-    return view('blog.index', compact('posts','categories'));
-  }
-
-  public function getPost($slug) {
-    $post = Post::where('slug', $slug)->firstOrFail();
-    $formattedBody = Markdown::convertToHtml($post->body);
-    $categories = Category::all();
-    return view('blog.post', compact('post','categories','formattedBody'));
-  }
-
-  public function getCategory(Category $cat){
-    $posts = Category::find($cat->id)->posts()->paginate(6);
-    $categories = Category::all();
-    return view('blog.index', compact('posts','cat','categories'));
-  }
-
-  public function next($post){
-    $post = Post::where('id', '>', $post)->first();
-    if(!$post){
-      $post = Post::orderBy('id','ASC')->first();
     }
-    $formattedBody = Markdown::convertToHtml($post->body);
-    $categories = Category::all();
-    return view('blog.post', compact('post','categories','formattedBody'));
-  }
 
-  public function prev($post){
-    $post = Post::where('id', '<', $post)->orderBy('id','DESC')->first();
-    if(!$post){
-      $post = Post::orderBy('id','DESC')->first();
+    /**
+     * return all post to post index page
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function index()
+    {
+        $posts = App\Post::orderBy('updated_at', 'DESC')->get();
+        return view('admin.all_posts', compact('posts'));
     }
-    $formattedBody = Markdown::convertToHtml($post->body);
-    $categories = Category::all();
-    return view('blog.post', compact('post','categories','formattedBody'));
-  }
 
-  public function edit($id){
-    $post = Post::where('id', $id)->firstOrFail();
-    $categories = Category::all();
-    return view('admin.edit_post', compact('post','categories'));
-  }
+    /**
+     * get post request and persist post to db
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function save(Request $request)
+    {
+        $this->postService->store($request);
+        Session::flash('flash_message', 'Success');
+        return redirect('/admin');
+    }
 
-  public function patch($id,Request $request){
-    $post = Post::where('id', $id)->firstOrFail();
-    $this->postService->patch($post,$request);
-    Session::flash('flash_message', 'Success');
-    return redirect('/admin');
-  }
 
+    /**
+     * serve add post form
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function addPost()
+    {
+        $categories = App\Category::all();
+        return view('admin.add_post', compact('categories'));
+    }
+
+
+    /**
+     * recieve patch request and update post
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function patch(Request $request)
+    {
+        $this->postService->patch($request);
+        Session::flash('flash_message', 'Success');
+        return redirect('/admin');
+    }
+
+    /**
+     * delete post
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function destroy(Request $request)
+    {
+        $post = Post::where('id', $request->post_id)->first();
+        $post->delete();
+        Session::flash('flash_message', 'Success');
+        return redirect('/admin');
+    }
 
 
 }

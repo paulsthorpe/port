@@ -2,63 +2,70 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Blog Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
+|
+|
+|
 |
 */
 
-Route::get('/', function () {
-    $posts = DB::table('posts')->orderBy('id','DESC')->take(5)->get();
-    return view('index', compact('posts'));
-});
+Route::get('/blog', 'BlogController@index');
 
-Route::get('/blog', 'PostController@index');
+Route::get('/blog/{slug}', 'BlogController@getPost');
 
-Route::get('/blog/{slug}', 'PostController@getPost');
+Route::get('/blog/next/{post}', 'BlogController@next');
 
-Route::get('/blog/next/{post}', 'PostController@next');
+Route::get('/blog/prev/{post}', 'BlogController@prev');
 
-Route::get('/blog/prev/{post}', 'PostController@prev');
-
-Route::get('/blog/category/{cat}', 'PostController@getCategory');
+Route::get('/blog/category/{cat}', 'BlogController@getCategory');
 
 Route::get('/post', function () {
     return view('blog.post');
 });
 
-Route::get('/google4ff0739b039c1218.html', function(){
-  return view('google');
+
+/*
+|--------------------------------------------------------------------------
+| Admin Routes
+|--------------------------------------------------------------------------
+|
+|
+|
+|
+|
+*/
+
+
+Route::group(['middleware' => 'auth'], function () {
+
+    Route::get('/admin', function () {
+        return view('admin.layout');
+    });
+
+    Route::get('/admin/add_post', 'PostController@addPost');
+
+    Route::get('/admin/all_posts', 'PostController@index');
+
+    Route::post('/admin/add_post', 'PostController@save');
+
+    Route::patch('/admin/edit_post', 'PostController@patch');
+
+    Rout::delete('/admin/edit_post', 'PostController@destroy');
+
+});
+
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/google4ff0739b039c1218.html', function () {
+    return view('google');
 });
 
 Route::auth();
 
-Route::group(['middleware' => 'auth'], function(){
-
-// Route::get('profile', ['middleware' => 'auth', function() {
-  Route::get('/admin', function () {
-      return view('admin.layout');
-  });
-
-  Route::get('/admin/add_post', function () {
-      $categories = App\Category::all();
-      return view('admin.add_post', compact('categories'));
-  });
-
-  Route::post('/admin/add_post', 'PostController@store');
-
-  Route::get('/admin/all_posts', function () {
-      $posts = App\Post::orderBy('updated_at','DESC')->get();
-      return view('admin.all_posts', compact('posts'));
-  });
-
-  Route::get('/admin/edit_post/{id}', 'PostController@edit');
-
-  Route::patch('/admin/edit_post/{id}', 'PostController@patch');
-
+Route::get('/', function () {
+    $posts = DB::table('posts')->orderBy('id', 'DESC')->take(5)->get();
+    return view('index', compact('posts'));
 });
-
-Route::get('/home', 'HomeController@index');

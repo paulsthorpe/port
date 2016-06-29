@@ -44,6 +44,7 @@
         </div>
       <!-- PUBLISH -->
         <div class="form-group">
+          <input type="hidden" name="post_id" value="{{$post->id}}">
           <input type="submit" name="publish" class="btn btn-primary btn-lg" value="Publish">
         </div>
       </aside><!--SIDEBAR-->
