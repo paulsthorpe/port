@@ -52,7 +52,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::patch('/admin/edit_post', 'PostController@patch');
 
-    Rout::delete('/admin/edit_post', 'PostController@destroy');
+    Route::delete('/admin/edit_post', 'PostController@destroy');
 
 });
 
