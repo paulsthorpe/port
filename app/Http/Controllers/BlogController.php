@@ -29,7 +29,6 @@ class BlogController extends Controller
     public function getPost($slug)
     {
         $post = Post::where('slug', $slug)->first();
-        return $post;
         $foo = Markdown::convertToHtml($post->body);
         $categories = Category::all();
         return view('blog.post', compact('post', 'categories', 'foo'));
