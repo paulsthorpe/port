@@ -48,7 +48,7 @@ class PostController extends Controller
         return redirect('/admin');
     }
 
-    public function edit(Post $id){
+    public function edit(Post $post){
       return view('admin.edit_post', compact('post'));
     }
 
