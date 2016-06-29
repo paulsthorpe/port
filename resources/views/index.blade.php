@@ -42,7 +42,7 @@
    <br>Hello! My name is Paul Thorpe and I love Web Development...and my family, fishing, craft beer, good food, good company...anyways... </p>
    <img src="images/me.png" alt="" class="me">
    <p class="welcome_message">I have a diverse skill set that is constantly increasing to ensure that I can handle most aspects of the web
-     development process. I also have a serious addiction to learning. HTML5, CSS3, Bootstrap, Javascript, Jquery, PHP and MYSQL are all tools I use on a regular basis, but if a problem
+     development process. I also have a serious addiction to learning. HTML5, CSS3, Bootstrap, Javascript, Jquery, PHP and MYSQL/MariaDB are all tools I use on a regular basis, but if a problem
      comes along that requires learning a new skill, I will pick it up with enthusiasm. <br></br> From responsive front-end designs to server-side architecture,<br>
      I LOVE IT ALL</p>
 
@@ -71,7 +71,7 @@
          the project you could find me using Twitter's <a href="http://getbootstrap.com"><strong>Bootstrap</strong></a>, <a href="http://susy.oddbird.net/">
         <strong>Susy</strong></a> or my own custom grids to create responsive layouts that look great on any device.</p>
       <br></br>
-      <p>If a database is required for the project I typically employ MYSQL to store all data, and use PHP to access data safely and efficiently.
+      <p>If a database is required for the project I typically employ MYSQL or Maria DB to store all data, and use PHP to access data safely and efficiently.
         I use modern PHP MVC frameworks like <a href="http://laravel.com"><strong>Laravel</strong></a> and Object Oriented practices to
         make sure applications are efficient, reliable, easily manipulated and scalable. I love a great challenge, and get the most pleasure
         from projects heavily reliant on the server and data. Not too much in life gives me more pleasure than creating/working
