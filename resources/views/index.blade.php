@@ -94,7 +94,7 @@
         <p class="m-d">{{Carbon\Carbon::parse($post->created_at)->format('M Y')}}</p>
       </div>
       <div class="post-details">
-        <h2><a data-text="{{$post->title}}" href="/blog/{{$post->id}}">{{$post->title}} &nbsp <i class="fa fa-chevron-right"></i></a></h2>
+        <h2><a data-text="{{$post->title}}" href="/blog/{{$post->slug}}">{{$post->title}} &nbsp <i class="fa fa-chevron-right"></i></a></h2>
         <p>{{substr($post->body,0,200)}}...</p>
       </div>
       <div style="clear:both;">
