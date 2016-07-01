@@ -72,32 +72,6 @@ a:active {
           opacity: 1;
         }//nav_element&:hover
 
-        &:nth-child(2) {
-          ul{
-            background-color: #082a4f;
-            opacity: 0.8;
-            list-style: none;
-            position: relative;
-            top: -240px;
-            max-height: 0;
-            overflow: hidden;
-            li {
-              padding: 10px;
-              height: 50px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              &:hover{
-                background-color: darken(#082a4f,10%);
-
-              }
-              a {
-                color: #6c98b8;
-              }
-            }
-          }
-        }
-
       }//nav_element
 
     }//nav_elements
@@ -189,7 +163,6 @@ a:active {
   .skills {
 
     width: 100%;
-    height: 100vh;
     position: relative;
     top: 0;
     @include background-image-blue("/images/laptop.png");
@@ -410,6 +383,35 @@ a:active {
           align-items: center;
           justify-content: center;
           padding: 0;
+          &:nth-child(2) {
+            ul{
+              background-color: #082a4f;
+              opacity: 0.8;
+              list-style: none;
+              position: relative;
+              z-index: 50;
+              top: -430px;
+              left: -75px;
+              max-height: 400px;
+              width: 200%;
+              overflow: hidden;
+              li {
+                padding: 10px;
+                height: 100px;
+                width: 40%;
+                text-align: center;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                &:hover{
+                  background-color: darken(#082a4f,10%);
+                }
+                a {
+                  color: #6c98b8;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -546,6 +548,31 @@ a:active {
           align-items: center;
           justify-content: center;
           padding: 0;
+          &:nth-child(2) {
+            ul{
+              background-color: #082a4f;
+              opacity: 0.8;
+              list-style: none;
+              position: relative;
+              top: -120px;
+              max-height: 400px;
+              overflow: hidden;
+              li {
+                padding: 10px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                  background-color: darken(#082a4f,10%);
+
+                }
+                a {
+                  color: #6c98b8;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -613,6 +640,31 @@ a:active {
           align-items: center;
           justify-content: center;
           padding: 0;
+          &:nth-child(2) {
+            ul{
+              background-color: #082a4f;
+              opacity: 0.8;
+              list-style: none;
+              position: relative;
+              top: -240px;
+              max-height: 400px;
+              overflow: hidden;
+              li {
+                padding: 10px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                  background-color: darken(#082a4f,10%);
+
+                }
+                a {
+                  color: #6c98b8;
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -61,6 +61,14 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/projects', function() {
+  return view('projects.project_index');
+});
+
+Route::get('/bugwild', function() {
+  return view('projects.bugwild');
+});
+
 Route::get('/google4ff0739b039c1218.html', function () {
     return view('google');
 });
