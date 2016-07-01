@@ -6467,28 +6467,32 @@ a:active {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -100;
+    z-index: 1000;
     background-color: #000;
     opacity: 0.5;
     display: none; }
   .bugwild .lightbox-image {
     width: 80%;
-    height: 85%;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     z-index: 1200;
     margin-left: 10%;
-    margin-top: 2%;
-    opacity: 0;
+    margin-top: 4%;
     display: none; }
   .bugwild .close {
     position: absolute;
-    z-index: 1200;
+    z-index: 1201;
     right: 50px;
     top: 30px;
-    display: none; }
+    display: none;
+    font-size: 3em; }
+    .bugwild .close i {
+      color: #fff; }
+    .bugwild .close:hover .circle path {
+      stroke-dashoffset: 0;
+      stroke-opacity: 1; }
   .bugwild * {
     font-family: 'Lato', Helvetica;
     font-weight: lighter; }
@@ -6558,20 +6562,40 @@ a:active {
       width: 100%;
       display: inline-block; }
       .bugwild * hr.left {
-        width: 40%;
+        width: 45%;
         float: left; }
       .bugwild * hr.right {
-        width: 40%;
+        width: 45%;
         float: right; }
     .bugwild * .center-icon {
-      display: inline-block;
-      width: 19%;
-      height: 40px;
+      width: 9.5%;
+      height: 150px;
       float: left;
       text-align: center;
-      color: #3fa46a; }
+      color: #3fa46a;
+      position: relative;
+      transform: translateY(-75px); }
+      .bugwild * .center-icon:hover .circle path {
+        stroke-dashoffset: 0;
+        stroke-opacity: 1; }
       .bugwild * .center-icon i {
-        font-size: 30em; }
+        font-size: 3em;
+        -ms-flex: 1;
+        flex: 1;
+        position: relative;
+        top: 50%; }
+      .bugwild * .center-icon .circle {
+        width: 100%;
+        height: 175px;
+        position: absolute;
+        top: 7%;
+        left: 1%;
+        z-index: 20; }
+        .bugwild * .center-icon .circle path {
+          stroke-dasharray: 924 924;
+          stroke-dashoffset: 920;
+          stroke-opacity: 0;
+          transition: all 1.2s ease-in-out; }
   .bugwild .header-section {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/images/bwbg.png");
     background-repeat: no-repeat;
@@ -6620,15 +6644,17 @@ a:active {
       width: 100%;
       margin: 100px 0; }
     .bugwild .container .objectives {
-      width: 50%;
+      width: 60%;
       height: auto;
-      margin: 100px auto; }
+      margin: 100px auto;
+      padding-left: 10%; }
       .bugwild .container .objectives .header {
         text-align: left; }
       .bugwild .container .objectives .goals,
       .bugwild .container .objectives .tech {
         width: 50%;
         float: left;
+        margin-top: -100px;
         padding: 0 30px; }
         .bugwild .container .objectives .goals ul,
         .bugwild .container .objectives .tech ul {
@@ -6653,7 +6679,7 @@ a:active {
       height: auto;
       font-weight: lighter;
       padding: 0 100px;
-      margin: 100px auto; }
+      margin: 0 auto 175px; }
       .bugwild .container .the-plan .border-shadow,
       .bugwild .container .phase .border-shadow {
         box-shadow: 5px 5px 2px 0px #ccc; }
@@ -6689,122 +6715,256 @@ a:active {
       height: auto;
       width: 100%; }
 
-.project_image {
-  width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  position: relative; }
-  .project_image img {
-    width: 100%;
-    height: auto;
-    position: relative; }
-  .project_image .blinker {
-    height: 10px;
-    width: 10px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    top: 3.878%;
-    left: 87.25%;
-    animation: blinker 4s infinite; }
-
-.dashboard {
-  width: 40%;
-  height: auto;
-  perspective: 1000px;
-  float: left;
-  margin-top: -30px;
-  position: relative; }
-
-.dashboard img {
-  display: block;
-  width: 100%; }
-
-.skewed_pic {
-  position: relative;
-  top: 120vh;
-  left: 5%;
-  z-index: 1;
-  transform: skewX(-5deg);
-  overflow: hidden;
-  height: 500px;
-  width: 20%; }
-
-.skewed_pic img {
-  width: 100%;
-  height: auto;
-  transform: skewX(5deg) scale(1.1);
-  display: block; }
-
-.code_pen {
-  position: relative;
-  z-index: +500;
-  width: 100%;
-  height: 1500px;
-  left: 0;
-  top: -180px; }
-
-.php_class_pic {
-  position: absolute;
-  top: 145px;
-  overflow: hidden;
-  width: 45%;
-  max-height: 400px;
-  z-index: +5;
-  transition: max-height 0.3s; }
-
-.css_pic {
-  position: absolute;
-  top: 535px;
-  left: 683px;
-  max-width: 0;
-  height: 510px; }
-
-.css_pic.extend {
-  /*    position: absolute;
-    top: 536px;
-    left: 683px;*/
-  max-width: 700px;
-  transition: 0.3s; }
-
-.css_pic img {
-  width: 100%;
-  height: 100%; }
-
-.php_class_pic.extend {
-  max-height: 900px; }
-
-#toggle_php_class {
-  position: relative;
-  z-index: 10;
-  top: 34.5%;
-  left: 22.5%;
-  cursor: pointer;
-  transition: top 0.3s; }
-
-#toggle_css_class {
-  opacity: 0;
-  transition: opacity 0.1s;
-  transition-delay: 0.3s; }
-
-#toggle_css_class.extend {
-  opacity: 1;
-  position: relative;
-  z-index: 10;
-  top: 68%;
-  left: 23%;
-  cursor: pointer; }
-
-#toggle_php_class.extend {
-  top: 67.85%; }
-
-.php_class_pic img {
-  display: block;
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: +6; }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
+  .bugwild {
+    background-color: #f1f2f1; }
+  @keyframes blinker {
+    0% {
+      background-color: rgba(0, 255, 0, 0.7); }
+    49% {
+      background-color: rgba(0, 255, 0, 0.7); }
+    50% {
+      background-color: rgba(255, 255, 0, 0.7); }
+    100% {
+      background-color: rgba(255, 255, 0, 0.7); } }
+    .bugwild .backdrop {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: #000;
+      opacity: 0.5;
+      display: none; }
+    .bugwild .lightbox-image {
+      width: 80%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1200;
+      margin-left: 10%;
+      margin-top: 4%;
+      display: none; }
+    .bugwild .close {
+      position: absolute;
+      z-index: 1201;
+      right: 50px;
+      top: 30px;
+      display: none;
+      font-size: 3em; }
+      .bugwild .close i {
+        color: #fff; }
+      .bugwild .close:hover .circle path {
+        stroke-dashoffset: 0;
+        stroke-opacity: 1; }
+    .bugwild * {
+      font-family: 'Lato', Helvetica;
+      font-weight: lighter; }
+      .bugwild * .text-left {
+        display: block;
+        width: 50%;
+        height: auto;
+        float: left;
+        padding: 0 50px;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.2em; }
+      .bugwild * .text-right {
+        display: block;
+        width: 50%;
+        height: auto;
+        float: right;
+        padding: 0 50px;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.2em; }
+      .bugwild * .center-text {
+        width: 50%;
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.2em; }
+      .bugwild * .wide-center-text {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.2em; }
+      .bugwild * .image-left {
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+        padding: 0 50px; }
+        .bugwild * .image-left img {
+          width: 100%; }
+      .bugwild * .image-right {
+        box-sizing: border-box;
+        width: 50%;
+        float: right;
+        padding: 0 50px; }
+        .bugwild * .image-right img {
+          width: 100%; }
+      .bugwild * .center-image {
+        box-sizing: border-box;
+        width: 80%;
+        display: block;
+        margin: 50px auto; }
+        .bugwild * .center-image img {
+          width: 100%; }
+      .bugwild * .clear {
+        clear: both; }
+      .bugwild * .add-margin-t {
+        margin-top: 50px; }
+      .bugwild * .add-margin-b {
+        margin-bottom: 50px; }
+      .bugwild * hr {
+        background-color: #3fa46a;
+        border: 1px solid #3fa46a;
+        width: 100%;
+        display: inline-block; }
+        .bugwild * hr.left {
+          width: 45%;
+          float: left; }
+        .bugwild * hr.right {
+          width: 45%;
+          float: right; }
+      .bugwild * .center-icon {
+        width: 9.5%;
+        height: 150px;
+        float: left;
+        text-align: center;
+        color: #3fa46a;
+        position: relative;
+        transform: translateY(-75px); }
+        .bugwild * .center-icon:hover .circle path {
+          stroke-dashoffset: 0;
+          stroke-opacity: 1; }
+        .bugwild * .center-icon i {
+          font-size: 3em;
+          -ms-flex: 1;
+          flex: 1;
+          position: relative;
+          top: 50%; }
+        .bugwild * .center-icon .circle {
+          width: 100%;
+          height: 175px;
+          position: absolute;
+          top: 7%;
+          left: 1%;
+          z-index: 20; }
+          .bugwild * .center-icon .circle path {
+            stroke-dasharray: 924 924;
+            stroke-dashoffset: 920;
+            stroke-opacity: 0;
+            transition: all 1.2s ease-in-out; }
+    .bugwild .header-section {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/images/bwbg.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      margin-bottom: 20px;
+      height: 300px;
+      width: 100vw;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      border-bottom: 9px solid #3fa46a; }
+      .bugwild .header-section .header {
+        margin-top: 20px;
+        font-size: 6em;
+        text-align: center;
+        font-weight: lighter;
+        color: #fff;
+        -ms-flex: 1;
+        flex: 1; }
+    .bugwild .container {
+      width: 100%;
+      position: relative;
+      top: 0;
+      padding: 0; }
+      .bugwild .container .header {
+        font-size: 3em;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: lighter; }
+      .bugwild .container .sub-header {
+        font-size: 1.5em;
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+        height: auto;
+        text-align: center;
+        font-weight: bolder; }
+      .bugwild .container .about {
+        width: 100%;
+        margin: 100px 0; }
+      .bugwild .container .objectives {
+        width: 60%;
+        height: auto;
+        margin: 100px auto;
+        padding-left: 10%; }
+        .bugwild .container .objectives .header {
+          text-align: left; }
+        .bugwild .container .objectives .goals,
+        .bugwild .container .objectives .tech {
+          width: 50%;
+          float: left;
+          margin-top: -100px;
+          padding: 0 30px; }
+          .bugwild .container .objectives .goals ul,
+          .bugwild .container .objectives .tech ul {
+            padding-left: 10px; }
+      .bugwild .container .breaker {
+        width: 100vw;
+        background-color: #3fa46a;
+        padding: 50px;
+        margin: 50px 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .bugwild .container .breaker p {
+          -ms-flex: 1;
+          flex: 1; }
+      .bugwild .container .the-plan,
+      .bugwild .container .phase {
+        width: 100%;
+        height: auto;
+        font-weight: lighter;
+        padding: 0 100px;
+        margin: 0 auto 175px; }
+        .bugwild .container .the-plan .border-shadow,
+        .bugwild .container .phase .border-shadow {
+          box-shadow: 5px 5px 2px 0px #ccc; }
+        .bugwild .container .the-plan .header,
+        .bugwild .container .phase .header {
+          font-size: 5em;
+          display: block;
+          width: 100%;
+          height: auto;
+          text-align: center;
+          font-weight: lighter;
+          margin: 30px auto 10px; }
+      .bugwild .container .wrap-up {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/images/background.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: auto;
+        width: 100%; } }
 
 * {
   margin: 0;
