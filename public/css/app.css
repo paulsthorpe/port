@@ -6033,16 +6033,18 @@ a:active {
     .home .welcome .welcome_message {
       width: 80%;
       font-size: .7em; }
-  .home .skills a {
-    text-decoration: underline; }
-  .home .skills .info_wrapper {
-    width: 80%;
-    font-size: 2.4em;
-    font-weight: 400; }
-    .home .skills .info_wrapper * {
-      overflow: visible; }
-    .home .skills .info_wrapper .skills_header {
+  .home .skills {
+    padding-bottom: 50px; }
+    .home .skills a {
+      text-decoration: underline; }
+    .home .skills .info_wrapper {
+      width: 80%;
+      font-size: 2.4em;
       font-weight: 400; }
+      .home .skills .info_wrapper * {
+        overflow: visible; }
+      .home .skills .info_wrapper .skills_header {
+        font-weight: 400; }
   .home .blog {
     padding: 80px 20px;
     width: 85%;

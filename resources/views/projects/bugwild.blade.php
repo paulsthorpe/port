@@ -21,7 +21,7 @@
         <div class="about">
             <p class="header">About BugWild Fly Co.</p>
             <p class="center-text">
-                Daniel, Owner of Bugwild Fly Company, is a very talented fly tier out of eastern North Carolina and has gained immense notoriety in his short time pursuing this hobby and business venture. His exposure has been solely through social media up to this point. His followers admire the work he does, and who doesnt look up to an individual with such passion for a craft? Daniels ties a lot of different custom flies for customers, but his noteriety comes mostly from work with deer hair. Few people ever get to the level of mastery in this area that Daniel has achieved.
+                Daniel, Owner of Bugwild Fly Company, is a very talented fly tier out of eastern North Carolina and has gained immense notoriety in his short time pursuing this hobby and business venture. His exposure has been solely through social media up to this point. His followers admire the work he does, and who doesn't look up to an individual with such passion for a craft? Daniels ties a lot of different custom flies for customers, but his notoriety comes mostly from work with deer hair. Few people ever get to the level of mastery in this area that Daniel has achieved.
             </p>
         </div>
         <hr class="left">
@@ -46,10 +46,10 @@
                     <li>Incorporate a Blog to provide an extra social outlet</li>
                     <li>Ease Company's problems with keeping track of orders</li>
                     <li>
-                        Create an easy to access, organizeable method to report income
+                        Create an easy to access, organizable method to report income
                     </li>
                     <li>
-                        Ensure site administraion has an intuitive UI that anyone can use with little to no training
+                        Ensure site administration has an intuitive UI that anyone can use with little to no training
                     </li>
                 </ul>
             </div>
@@ -75,8 +75,8 @@
 
         <div class="the-plan">
             <p class="center-text">Up until this point Daniel has handled all of his business through email and paypal, with no efficient way of handling his day to day business, or keeping records. He needed a website to help automate the order process, as this is not his only job. He also wanted to help build his brand and extend his online personality beyond the restrictions of typical social media.
-                <br></br>Daniel likes to keep things simple, and stressed a clean interface that was smooth to navigate with the least amount of clutter I could provide. And although a website was a necessary step for his business, he also worried that maintaining a website would be an extravangant learning process.
-                <br></br>A project like this would usually benefit from a simple Wordpress install. For reasons of personal preference, Daniel did not want a solution built on Wordpress. He had tried to start a site on the Wordpress platform once before and was ovewhelmed by the process which left a bad first impression. That was ok in my book. Wordpress has its place in this world, especially for small projects. That doesnt make me a huge fan of the platform though.
+                <br></br>Daniel likes to keep things simple, and stressed a clean interface that was smooth to navigate with the least amount of clutter I could provide. And although a website was a necessary step for his business, he also worried that maintaining a website would be an extravagant learning process.
+                <br></br>A project like this would usually benefit from a simple Wordpress install. For reasons of personal preference, Daniel did not want a solution built on Wordpress. He had tried to start a site on the Wordpress platform once before and was overwhelmed by the process which left a bad first impression. That was ok in my book. Wordpress has its place in this world, especially for small projects. That doesn't make me a huge fan of the platform though.
                 <br></br>After working through his needs and concerns, I developed a plan to create the clean, easy to use website he was looking for.</p>
             <br></br>
             <div class="clear"></div>
@@ -124,7 +124,7 @@
         <div class="phase">
             <p class="header">Phase 2</p>
             <p class="sub-header">Business Solutions</p>
-            <p class="wide-center-text">The next phase consisted of planning every feature Daniel needed, plus some that he didn't know he needed. The idea is to over-deliver and leave customers with a product that exceeds expectations and solves problems they didn't even know they had. Years ago, I ran my own business reselling used cars and recycling/reselling car parts. I handled all of my business in a similar fashion to what Daniel has become accustomed to and if I had known better at the time, my business probably could have ended up in places I never thought of. Utilizing every tool you can is important in everyday life and even more in business. It isnt always about working harder because life is about leverage and the more you have the better.
+            <p class="wide-center-text">The next phase consisted of planning every feature Daniel needed, plus some that he didn't know he needed. The idea is to over-deliver and leave customers with a product that exceeds expectations and solves problems they didn't even know they had. Years ago, I ran my own business reselling used cars and recycling/reselling car parts. I handled all of my business in a similar fashion to what Daniel has become accustomed to and if I had known better at the time, my business probably could have ended up in places I never thought of. Utilizing every tool you can is important in everyday life and even more in business. It isn't always about working harder because life is about leverage and the more you have the better.
                 <br></br>I created a feature to organize his orders by their shipment status and further by the date and time they were received. Now he knows exactly when he got an order and how to prioritize his work to keep every customer as happy as possible. Being a company that supplies custom, hand made products, there can be a wait time above what most internet shoppers are used to these days.</p>
             <div class="center-image">
                 <img class="border-shadow" src="/images/orders.png" />
