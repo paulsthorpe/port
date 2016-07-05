@@ -14,7 +14,7 @@
   <nav class="header_nav">
     <ul class="nav_elements">
       <a href="/"><li class="nav_element">Home</li></a>
-      <a href="/project_index"><li class="nav_element">Projects</li></a>
+      <a href="/projects"><li class="nav_element">Projects</li></a>
       <a href="#contact"><li class="nav_element">Contact</li></a>
       <a href="/blog"><li class="nav_element">Blog</li></a>
     </ul>
