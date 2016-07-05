@@ -6745,6 +6745,8 @@ a:active {
       text-align: center;
       line-height: 1.5em;
       font-size: 1.2em; }
+    .bugwild * .text-left-wide {
+      width: 100%; }
     .bugwild * .text-right {
       display: block;
       width: 80%;
@@ -6780,11 +6782,15 @@ a:active {
         width: 100%; }
     .bugwild * .image-right {
       box-sizing: border-box;
-      width: 80%;
+      width: 90%;
+      display: block;
       margin: 0 auto 50px;
-      padding: 0 50px; }
+      padding: 0 0;
+      float: none; }
       .bugwild * .image-right img {
         width: 100%; }
+    .bugwild * .image-right-small {
+      width: 100%; }
     .bugwild * .center-image {
       box-sizing: border-box;
       width: 80%;
@@ -6792,14 +6798,28 @@ a:active {
       margin: 50px auto; }
       .bugwild * .center-image img {
         width: 100%; }
-    .bugwild * .center-icon i {
-      font-size: 3em;
-      -ms-flex: 1;
-      flex: 1;
-      position: relative;
-      top: 50%; }
-    .bugwild * .center-icon .circle {
-      display: none; }
+    .bugwild * hr {
+      background-color: #3fa46a;
+      border: 1px solid #3fa46a;
+      width: 100%;
+      display: inline-block; }
+      .bugwild * hr.left {
+        width: 43%;
+        float: left; }
+      .bugwild * hr.right {
+        width: 43%;
+        float: right; }
+    .bugwild * .center-icon {
+      height: auto;
+      transform: translateY(0); }
+      .bugwild * .center-icon i {
+        font-size: 3em;
+        -ms-flex: 1;
+        flex: 1;
+        position: relative;
+        padding-left: 25px; }
+      .bugwild * .center-icon .circle {
+        display: none; }
     .bugwild .container .header {
       font-size: 3em;
       display: block;
@@ -6821,10 +6841,11 @@ a:active {
     .bugwild .container .objectives {
       width: 100%;
       height: auto;
-      margin: 50px auto;
+      margin: 125px auto 20px;
       padding-left: 10%; }
       .bugwild .container .objectives .header {
-        text-align: left; }
+        text-align: center;
+        font-size: 2em; }
       .bugwild .container .objectives .goals,
       .bugwild .container .objectives .tech {
         width: 50%;
@@ -6868,10 +6889,349 @@ a:active {
         font-weight: lighter;
         margin: 30px auto 10px; }
     .bugwild .container .wrap-up {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/images/background.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
+      height: auto;
+      width: 100%;
+      position: relative; }
+      .bugwild .container .wrap-up img {
+        width: 80%; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 650px) and (-webkit-min-device-pixel-ratio: 2) {
+  .bugwild {
+    background-color: #f1f2f1; }
+    .bugwild .lightbox-image {
+      width: 80%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1200;
+      margin-left: 10%;
+      margin-top: 4%;
+      display: none; }
+    .bugwild * .text-left {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding: 0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bugwild * .text-left-wide {
+      width: 100%; }
+    .bugwild * .width-container {
+      width: 100%; }
+    .bugwild * .text-right {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding: 0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bugwild * .center-text {
+      width: 80%;
+      display: block;
+      height: auto;
+      margin: 0 auto 50px;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bugwild * .wide-center-text {
+      width: 80%;
+      display: block;
+      margin: 0 auto 50px;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bugwild * .image-left {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 0 auto 50px;
+      float: none;
+      padding: 0 0; }
+      .bugwild * .image-left img {
+        width: 100%; }
+    .bugwild * .image-right {
+      box-sizing: border-box;
+      width: 90%;
+      display: block;
+      margin: 0 auto 50px;
+      padding: 0 0;
+      float: none; }
+      .bugwild * .image-right img {
+        width: 100%; }
+    .bugwild * .image-right-small {
+      width: 100%; }
+    .bugwild * .center-image {
+      box-sizing: border-box;
+      width: 80%;
+      display: block;
+      margin: 50px auto; }
+      .bugwild * .center-image img {
+        width: 100%; }
+    .bugwild * .clear {
+      height: 0; }
+    .bugwild * hr {
+      background-color: #3fa46a;
+      border: 1px solid #3fa46a;
+      width: 100%;
+      display: inline-block; }
+      .bugwild * hr.left {
+        width: 40%;
+        float: left; }
+      .bugwild * hr.right {
+        width: 40%;
+        float: right; }
+    .bugwild * .center-icon {
+      height: auto;
+      transform: translateY(0); }
+      .bugwild * .center-icon i {
+        font-size: 3em;
+        -ms-flex: 1;
+        flex: 1;
+        position: relative;
+        padding-left: 15px; }
+      .bugwild * .center-icon .circle {
+        display: none; }
+    .bugwild .container .header {
+      font-size: 3em;
+      display: block;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font-weight: lighter; }
+    .bugwild .container .sub-header {
+      font-size: 1.5em;
+      display: block;
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      text-align: center;
+      font-weight: bolder; }
+    .bugwild .container .about {
+      width: 100%;
+      margin: 20px 0; }
+    .bugwild .container .objectives {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding-top: 125px; }
+      .bugwild .container .objectives .header {
+        text-align: center;
+        font-size: 2em; }
+      .bugwild .container .objectives .goals,
+      .bugwild .container .objectives .tech {
+        width: 50%;
+        float: left; }
+    .bugwild .container .breaker {
+      width: 100vw;
+      background-color: #3fa46a;
+      padding: 50px;
+      margin: 50px 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .bugwild .container .breaker p {
+        -ms-flex: 1;
+        flex: 1; }
+    .bugwild .container .the-plan,
+    .bugwild .container .phase {
+      width: 100%;
+      height: auto;
+      font-weight: lighter;
+      padding: 0;
+      margin: 0 auto; }
+      .bugwild .container .the-plan .border-shadow,
+      .bugwild .container .phase .border-shadow {
+        box-shadow: 5px 5px 2px 0px #ccc; }
+      .bugwild .container .the-plan .header,
+      .bugwild .container .phase .header {
+        font-size: 5em;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: lighter;
+        margin: 30px auto 10px; }
+    .bugwild .container .wrap-up {
+      height: auto;
+      width: 100%;
+      position: relative; }
+      .bugwild .container .wrap-up img {
+        width: 80%; } }
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 700px) and (orientation: landscape) {
+  .bugwild {
+    background-color: #f1f2f1; }
+    .bugwild .lightbox-image {
+      width: 80%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1200;
+      margin-left: 10%;
+      margin-top: 4%;
+      display: none; }
+    .bugwild * .text-left {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding: 0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bugwild * .text-left-wide {
+      width: 100%; }
+    .bugwild * .width-container {
+      width: 100%; }
+    .bugwild * .text-right {
+      display: block;
+      width: 90%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding: 0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bugwild * .center-text {
+      width: 90%;
+      display: block;
+      height: auto;
+      margin: 0 auto 50px;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bugwild * .wide-center-text {
+      width: 90%;
+      display: block;
+      margin: 0 auto 50px;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bugwild * .image-left {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 0 auto 50px;
+      float: none;
+      padding: 0 0; }
+      .bugwild * .image-left img {
+        width: 100%; }
+    .bugwild * .image-right {
+      box-sizing: border-box;
+      width: 90%;
+      display: block;
+      margin: 0 auto 50px;
+      padding: 0 0;
+      float: none; }
+      .bugwild * .image-right img {
+        width: 100%; }
+    .bugwild * .image-right-small {
+      width: 100%; }
+    .bugwild * .center-image {
+      box-sizing: border-box;
+      width: 90%;
+      display: block;
+      margin: 50px auto; }
+      .bugwild * .center-image img {
+        width: 100%; }
+    .bugwild * .clear {
+      height: 0; }
+    .bugwild * hr {
+      background-color: #3fa46a;
+      border: 1px solid #3fa46a;
+      display: inline-block; }
+      .bugwild * hr.left {
+        width: 42%;
+        float: left; }
+      .bugwild * hr.right {
+        width: 42%;
+        float: right; }
+    .bugwild * .center-icon {
+      height: auto;
+      transform: translateY(0); }
+      .bugwild * .center-icon i {
+        font-size: 3em;
+        -ms-flex: 1;
+        flex: 1;
+        position: relative;
+        padding-left: 30px; }
+      .bugwild * .center-icon .circle {
+        display: none; }
+    .bugwild .container .header {
+      font-size: 3em;
+      display: block;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font-weight: lighter; }
+    .bugwild .container .sub-header {
+      font-size: 1.5em;
+      display: block;
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      text-align: center;
+      font-weight: bolder; }
+    .bugwild .container .about {
+      width: 100%;
+      margin: 20px 0; }
+    .bugwild .container .objectives {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding-top: 125px; }
+      .bugwild .container .objectives .header {
+        text-align: center;
+        font-size: 2em; }
+      .bugwild .container .objectives .goals,
+      .bugwild .container .objectives .tech {
+        width: 50%;
+        float: left; }
+    .bugwild .container .breaker {
+      width: 100vw;
+      background-color: #3fa46a;
+      padding: 50px;
+      margin: 50px 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .bugwild .container .breaker p {
+        -ms-flex: 1;
+        flex: 1; }
+    .bugwild .container .the-plan,
+    .bugwild .container .phase {
+      width: 100%;
+      height: auto;
+      font-weight: lighter;
+      padding: 0;
+      margin: 0 auto; }
+      .bugwild .container .the-plan .border-shadow,
+      .bugwild .container .phase .border-shadow {
+        box-shadow: 5px 5px 2px 0px #ccc; }
+      .bugwild .container .the-plan .header,
+      .bugwild .container .phase .header {
+        font-size: 5em;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: lighter;
+        margin: 30px auto 10px; }
+    .bugwild .container .wrap-up {
       height: auto;
       width: 100%;
       position: relative; }
@@ -7094,12 +7454,11 @@ a:active {
       width: 100%;
       margin: 100px 0; }
     .bnb .container .objectives {
-      width: 60%;
+      width: 90%;
       height: auto;
-      margin: 100px auto;
-      padding-left: 10%; }
+      margin: 20px auto; }
       .bnb .container .objectives .header {
-        text-align: left; }
+        text-align: center; }
       .bnb .container .objectives .goals,
       .bnb .container .objectives .tech {
         width: 50%;
@@ -7153,9 +7512,9 @@ a:active {
         margin: 50px auto 150px; }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
-  .bugwild {
+  .bnb {
     background-color: #f1f2f1; }
-    .bugwild .lightbox-image {
+    .bnb .lightbox-image {
       width: 80%;
       position: absolute;
       top: 0;
@@ -7165,7 +7524,7 @@ a:active {
       margin-left: 10%;
       margin-top: 4%;
       display: none; }
-    .bugwild * .text-left {
+    .bnb * .text-left {
       display: block;
       width: 80%;
       height: auto;
@@ -7175,7 +7534,9 @@ a:active {
       text-align: center;
       line-height: 1.5em;
       font-size: 1.2em; }
-    .bugwild * .text-right {
+    .bnb * .text-left-wide {
+      width: 100%; }
+    .bnb * .text-right {
       display: block;
       width: 80%;
       height: auto;
@@ -7185,7 +7546,7 @@ a:active {
       text-align: center;
       line-height: 1.5em;
       font-size: 1.2em; }
-    .bugwild * .center-text {
+    .bnb * .center-text {
       width: 80%;
       display: block;
       height: auto;
@@ -7193,51 +7554,69 @@ a:active {
       text-align: center;
       line-height: 1.5em;
       font-size: 1.2em; }
-    .bugwild * .wide-center-text {
+    .bnb * .wide-center-text {
       width: 80%;
       display: block;
       margin: 0 auto 50px;
       text-align: center;
       line-height: 1.5em;
       font-size: 1.2em; }
-    .bugwild * .image-left {
+    .bnb * .image-left {
       box-sizing: border-box;
       width: 90%;
       margin: 0 auto 50px;
       float: none;
       padding: 0 0; }
-      .bugwild * .image-left img {
+      .bnb * .image-left img {
         width: 100%; }
-    .bugwild * .image-right {
+    .bnb * .image-right {
       box-sizing: border-box;
-      width: 80%;
+      width: 90%;
+      display: block;
       margin: 0 auto 50px;
-      padding: 0 50px; }
-      .bugwild * .image-right img {
+      padding: 0 0;
+      float: none; }
+      .bnb * .image-right img {
         width: 100%; }
-    .bugwild * .center-image {
+    .bnb * .image-right-small {
+      width: 100%; }
+    .bnb * .center-image {
       box-sizing: border-box;
       width: 80%;
       display: block;
       margin: 50px auto; }
-      .bugwild * .center-image img {
+      .bnb * .center-image img {
         width: 100%; }
-    .bugwild * .center-icon i {
-      font-size: 3em;
-      -ms-flex: 1;
-      flex: 1;
-      position: relative;
-      top: 50%; }
-    .bugwild * .center-icon .circle {
-      display: none; }
-    .bugwild .container .header {
+    .bnb * hr {
+      background-color: red;
+      border: 1px solid red;
+      width: 100%;
+      display: inline-block; }
+      .bnb * hr.left {
+        width: 43%;
+        float: left; }
+      .bnb * hr.right {
+        width: 43%;
+        float: right; }
+    .bnb * .center-icon {
+      height: auto;
+      transform: translateY(0); }
+      .bnb * .center-icon i {
+        font-size: 3em;
+        -ms-flex: 1;
+        flex: 1;
+        position: relative;
+        padding-left: 25px; }
+      .bnb * .center-icon .circle {
+        display: none; }
+    .bnb .container .header {
       font-size: 3em;
       display: block;
       width: 100%;
       height: auto;
       text-align: center;
       font-weight: lighter; }
-    .bugwild .container .sub-header {
+    .bnb .container .sub-header {
       font-size: 1.5em;
       display: block;
       width: 100%;
@@ -7245,26 +7624,27 @@ a:active {
       height: auto;
       text-align: center;
       font-weight: bolder; }
-    .bugwild .container .about {
+    .bnb .container .about {
       width: 100%;
       margin: 100px 0; }
-    .bugwild .container .objectives {
+    .bnb .container .objectives {
       width: 100%;
       height: auto;
-      margin: 50px auto;
+      margin: 125px auto 20px;
       padding-left: 10%; }
-      .bugwild .container .objectives .header {
-        text-align: left; }
-      .bugwild .container .objectives .goals,
-      .bugwild .container .objectives .tech {
+      .bnb .container .objectives .header {
+        text-align: center;
+        font-size: 2em; }
+      .bnb .container .objectives .goals,
+      .bnb .container .objectives .tech {
         width: 50%;
         float: left;
         margin-top: -100px;
         padding: 0 30px; }
-        .bugwild .container .objectives .goals ul,
-        .bugwild .container .objectives .tech ul {
+        .bnb .container .objectives .goals ul,
+        .bnb .container .objectives .tech ul {
           padding-left: 10px; }
-    .bugwild .container .breaker {
+    .bnb .container .breaker {
       width: 100vw;
       background-color: red;
       padding: 50px;
@@ -7275,21 +7655,21 @@ a:active {
       justify-content: center;
       -ms-flex-align: center;
       align-items: center; }
-      .bugwild .container .breaker p {
+      .bnb .container .breaker p {
         -ms-flex: 1;
         flex: 1; }
-    .bugwild .container .the-plan,
-    .bugwild .container .phase {
+    .bnb .container .the-plan,
+    .bnb .container .phase {
       width: 100%;
       height: auto;
       font-weight: lighter;
       padding: 0;
       margin: 0 auto; }
-      .bugwild .container .the-plan .border-shadow,
-      .bugwild .container .phase .border-shadow {
+      .bnb .container .the-plan .border-shadow,
+      .bnb .container .phase .border-shadow {
         box-shadow: 5px 5px 2px 0px #ccc; }
-      .bugwild .container .the-plan .header,
-      .bugwild .container .phase .header {
+      .bnb .container .the-plan .header,
+      .bnb .container .phase .header {
         font-size: 5em;
         display: block;
         width: 100%;
@@ -7297,15 +7677,354 @@ a:active {
         text-align: center;
         font-weight: lighter;
         margin: 30px auto 10px; }
-    .bugwild .container .wrap-up {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/images/background.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
+    .bnb .container .wrap-up {
       height: auto;
       width: 100%;
       position: relative; }
-      .bugwild .container .wrap-up img {
+      .bnb .container .wrap-up img {
+        width: 80%; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 650px) and (-webkit-min-device-pixel-ratio: 2) {
+  .bnb {
+    background-color: #f1f2f1; }
+    .bnb .lightbox-image {
+      width: 80%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1200;
+      margin-left: 10%;
+      margin-top: 4%;
+      display: none; }
+    .bnb * .text-left {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding: 0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bnb * .text-left-wide {
+      width: 100%; }
+    .bnb * .width-container {
+      width: 100%; }
+    .bnb * .text-right {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding: 0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bnb * .center-text {
+      width: 80%;
+      display: block;
+      height: auto;
+      margin: 0 auto 50px;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bnb * .wide-center-text {
+      width: 80%;
+      display: block;
+      margin: 0 auto 50px;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bnb * .image-left {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 0 auto 50px;
+      float: none;
+      padding: 0 0; }
+      .bnb * .image-left img {
+        width: 100%; }
+    .bnb * .image-right {
+      box-sizing: border-box;
+      width: 90%;
+      display: block;
+      margin: 0 auto 50px;
+      padding: 0 0;
+      float: none; }
+      .bnb * .image-right img {
+        width: 100%; }
+    .bnb * .image-right-small {
+      width: 100%; }
+    .bnb * .center-image {
+      box-sizing: border-box;
+      width: 80%;
+      display: block;
+      margin: 50px auto; }
+      .bnb * .center-image img {
+        width: 100%; }
+    .bnb * .clear {
+      height: 0; }
+    .bnb * hr {
+      background-color: red;
+      border: 1px solid red;
+      width: 100%;
+      display: inline-block; }
+      .bnb * hr.left {
+        width: 40%;
+        float: left; }
+      .bnb * hr.right {
+        width: 40%;
+        float: right; }
+    .bnb * .center-icon {
+      height: auto;
+      transform: translateY(0); }
+      .bnb * .center-icon i {
+        font-size: 3em;
+        -ms-flex: 1;
+        flex: 1;
+        position: relative;
+        padding-left: 15px; }
+      .bnb * .center-icon .circle {
+        display: none; }
+    .bnb .container .header {
+      font-size: 3em;
+      display: block;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font-weight: lighter; }
+    .bnb .container .sub-header {
+      font-size: 1.5em;
+      display: block;
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      text-align: center;
+      font-weight: bolder; }
+    .bnb .container .about {
+      width: 100%;
+      margin: 20px 0; }
+    .bnb .container .objectives {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding-top: 125px; }
+      .bnb .container .objectives .header {
+        text-align: center;
+        font-size: 2em; }
+      .bnb .container .objectives .goals,
+      .bnb .container .objectives .tech {
+        width: 50%;
+        float: left; }
+    .bnb .container .breaker {
+      width: 100vw;
+      background-color: red;
+      padding: 50px;
+      margin: 50px 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .bnb .container .breaker p {
+        -ms-flex: 1;
+        flex: 1; }
+    .bnb .container .the-plan,
+    .bnb .container .phase {
+      width: 100%;
+      height: auto;
+      font-weight: lighter;
+      padding: 0;
+      margin: 0 auto; }
+      .bnb .container .the-plan .border-shadow,
+      .bnb .container .phase .border-shadow {
+        box-shadow: 5px 5px 2px 0px #ccc; }
+      .bnb .container .the-plan .header,
+      .bnb .container .phase .header {
+        font-size: 5em;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: lighter;
+        margin: 30px auto 10px; }
+    .bnb .container .wrap-up {
+      height: auto;
+      width: 100%;
+      position: relative; }
+      .bnb .container .wrap-up img {
+        width: 80%; } }
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 700px) and (orientation: landscape) {
+  .bnb {
+    background-color: #f1f2f1; }
+    .bnb .lightbox-image {
+      width: 80%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1200;
+      margin-left: 10%;
+      margin-top: 4%;
+      display: none; }
+    .bnb * .text-left {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding: 0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bnb * .text-left-wide {
+      width: 100%; }
+    .bnb * .width-container {
+      width: 100%; }
+    .bnb * .text-right {
+      display: block;
+      width: 90%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding: 0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bnb * .center-text {
+      width: 90%;
+      display: block;
+      height: auto;
+      margin: 0 auto 50px;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bnb * .wide-center-text {
+      width: 90%;
+      display: block;
+      margin: 0 auto 50px;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em; }
+    .bnb * .image-left {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 0 auto 50px;
+      float: none;
+      padding: 0 0; }
+      .bnb * .image-left img {
+        width: 100%; }
+    .bnb * .image-right {
+      box-sizing: border-box;
+      width: 90%;
+      display: block;
+      margin: 0 auto 50px;
+      padding: 0 0;
+      float: none; }
+      .bnb * .image-right img {
+        width: 100%; }
+    .bnb * .image-right-small {
+      width: 100%; }
+    .bnb * .center-image {
+      box-sizing: border-box;
+      width: 90%;
+      display: block;
+      margin: 50px auto; }
+      .bnb * .center-image img {
+        width: 100%; }
+    .bnb * .clear {
+      height: 0; }
+    .bnb * hr {
+      background-color: red;
+      border: 1px solid red;
+      display: inline-block; }
+      .bnb * hr.left {
+        width: 42%;
+        float: left; }
+      .bnb * hr.right {
+        width: 42%;
+        float: right; }
+    .bnb * .center-icon {
+      height: auto;
+      transform: translateY(0); }
+      .bnb * .center-icon i {
+        font-size: 3em;
+        -ms-flex: 1;
+        flex: 1;
+        position: relative;
+        padding-left: 30px; }
+      .bnb * .center-icon .circle {
+        display: none; }
+    .bnb .container .header {
+      font-size: 3em;
+      display: block;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font-weight: lighter; }
+    .bnb .container .sub-header {
+      font-size: 1.5em;
+      display: block;
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      text-align: center;
+      font-weight: bolder; }
+    .bnb .container .about {
+      width: 100%;
+      margin: 20px 0; }
+    .bnb .container .objectives {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding-top: 125px; }
+      .bnb .container .objectives .header {
+        text-align: center;
+        font-size: 2em; }
+      .bnb .container .objectives .goals,
+      .bnb .container .objectives .tech {
+        width: 50%;
+        float: left; }
+    .bnb .container .breaker {
+      width: 100vw;
+      background-color: red;
+      padding: 50px;
+      margin: 50px 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .bnb .container .breaker p {
+        -ms-flex: 1;
+        flex: 1; }
+    .bnb .container .the-plan,
+    .bnb .container .phase {
+      width: 100%;
+      height: auto;
+      font-weight: lighter;
+      padding: 0;
+      margin: 0 auto; }
+      .bnb .container .the-plan .border-shadow,
+      .bnb .container .phase .border-shadow {
+        box-shadow: 5px 5px 2px 0px #ccc; }
+      .bnb .container .the-plan .header,
+      .bnb .container .phase .header {
+        font-size: 5em;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: lighter;
+        margin: 30px auto 10px; }
+    .bnb .container .wrap-up {
+      height: auto;
+      width: 100%;
+      position: relative; }
+      .bnb .container .wrap-up img {
         width: 80%; } }
 
 * {
@@ -7512,7 +8231,7 @@ a:active {
       width: 75%;
       font-size: .8em; } }
 
-@media only screen and (min-device-width: 500px) and (max-device-width: 599px) and (orientation: landscape) {
+@media only screen and (min-device-width: 500px) and (max-device-width: 700px) and (orientation: landscape) {
   .blog-index .banner {
     height: 50vh; } }
 

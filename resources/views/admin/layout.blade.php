@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
+
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>paulthorpe.co admin</title>
-  <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/app.css" type="text/css">
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
@@ -28,29 +23,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
-  <!-- Main Header -->
+
   <header class="main-header">
 
-    <!-- Logo -->
+
     <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
-      <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>Admin</b>LTE</span>
     </a>
 
-    <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
-      <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
-      <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
 
           <li class="dropdown user user-menu">
-            <!-- Menu Toggle Button -->
             <a href="/logout">
               Logout
             </a>
@@ -59,15 +48,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   </header>
 
-  <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
 
-    <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
 
-      <!-- Sidebar Menu -->
       <ul class="sidebar-menu">
-        <!-- Optionally, you can add icons to the links -->
         <li><a href="/admin"><i class="fa fa-home"></i> <span>Statistics</span></a></li>
         <li><a href="/admin/all_posts"><i class="fa fa-table"></i> <span>Blog Posts</span></a></li>
         <li><a href="/admin/add_post"><i class="fa fa-plus"></i> <span>Add Post</span></a></li>
@@ -79,12 +64,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </ul>
         </li>
       </ul>
-      <!-- /.sidebar-menu -->
     </section>
-    <!-- /.sidebar -->
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     @if(Session::has('flash_message'))
       <div class="alert alert-success">

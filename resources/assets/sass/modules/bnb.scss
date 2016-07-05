@@ -256,12 +256,12 @@
           margin: 100px 0;
         }
         .objectives {
-          width: 60%;
+          width: 90%;
           height: auto;
-          margin: 100px auto;
-          padding-left: 10%;
+          margin: 20px auto;
+
           .header {
-            text-align: left;
+            text-align: center;
           }
           .goals,
           .tech {
@@ -324,7 +324,7 @@
 }//bugwild
 
 @include tablet {
-  .bugwild {
+  .bnb {
 
     .lightbox-image {
       width: 80%;
@@ -351,6 +351,9 @@
         text-align: center;
         line-height: 1.5em;
         font-size: 1.2em;
+      }
+      .text-left-wide {
+        width: 100%;
       }
       .text-right {
         display: block;
@@ -393,12 +396,17 @@
       }
       .image-right {
         box-sizing: border-box;
-        width: 80%;
+        width: 90%;
+        display: block;
         margin: 0 auto 50px;
-        padding: 0 50px;
+        padding: 0 0;
+        float: none;
         img {
           width: 100%;
         }
+      }
+      .image-right-small {
+        width: 100%;
       }
       .center-image {
         box-sizing: border-box;
@@ -409,14 +417,30 @@
           width: 100%;
         }
       }
-
+      hr {
+        background-color: red;
+        border: 1px solid red;
+        width: 100%;
+        display: inline-block;
+        &.left {
+          width: 43%;
+          float: left;
+        }
+        &.right {
+          width: 43%;
+          float: right;
+        }
+      }
       .center-icon {
-
+          height: auto;
+          transform: translateY(0);
         i {
           font-size: 3em;
           flex: 1;
           position: relative;
-          top: 50%;
+
+          padding-left: 25px;
+          // display: none;
         }
         .circle {
           display: none;
@@ -453,10 +477,11 @@
         .objectives {
           width: 100%;
           height: auto;
-          margin: 50px auto;
+          margin: 125px auto 20px;
           padding-left: 10%;
           .header {
-            text-align: left;
+            text-align: center;
+            font-size: 2em;
           }
           .goals,
           .tech {
@@ -504,7 +529,6 @@
 
         }//implementation
         .wrap-up {
-          @include background-image('/images/background.png');
           height: auto;
           width: 100%;
           position: relative;
@@ -513,6 +537,450 @@
           }
         }
     }//project_container
+
+}//bugwild
+}
+
+@include smallPhone {
+  .bnb {
+
+    .lightbox-image {
+      width: 80%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1200;
+      margin-left: 10%;
+      margin-top: 4%;
+      display: none;
+    }
+
+    background-color: #f1f2f1;
+    * {
+
+      .text-left {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 auto 50px;
+        padding:0;
+        float: none;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.2em;
+      }
+      .text-left-wide {
+        width: 100%;
+      }
+      .width-container {
+        width: 100%;
+      }
+      .text-right {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 auto 50px;
+        padding:0;
+        float: none;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.2em;
+      }
+      .center-text {
+        width: 80%;
+        display: block;
+        height: auto;
+        margin: 0 auto 50px;
+
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.2em;
+      }
+      .wide-center-text {
+        width: 80%;
+        display: block;
+        margin: 0 auto 50px;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.2em;
+      }
+      .image-left {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 auto 50px;
+        float: none;
+        padding: 0 0;
+        img {
+          width: 100%;
+        }
+      }
+      .image-right {
+        box-sizing: border-box;
+        width: 90%;
+        display: block;
+        margin: 0 auto 50px;
+        padding: 0 0;
+        float: none;
+        img {
+          width: 100%;
+        }
+      }
+      .image-right-small {
+        width: 100%;
+      }
+      .center-image {
+        box-sizing: border-box;
+        width: 80%;
+        display: block;
+        margin: 50px auto;
+        img {
+          width: 100%;
+        }
+      }
+      .clear {
+        height: 0;
+      }
+      hr {
+        background-color: red;
+        border: 1px solid red;
+        width: 100%;
+        display: inline-block;
+        &.left {
+          width: 40%;
+          float: left;
+        }
+        &.right {
+          width: 40%;
+          float: right;
+        }
+      }
+      .center-icon {
+          height: auto;
+          transform: translateY(0);
+        i {
+          font-size: 3em;
+          flex: 1;
+          position: relative;
+
+          padding-left: 15px;
+          // display: none;
+        }
+        .circle {
+          display: none;
+
+        }//circle
+      }
+
+    }
+
+
+    .container {
+
+        .header {
+          font-size: 3em;
+          display: block;
+          width: 100%;
+          height: auto;
+          text-align: center;
+          font-weight: lighter;
+        }
+        .sub-header {
+          font-size: 1.5em;
+          display: block;
+          width: 100%;
+          margin-bottom: 50px;
+          height: auto;
+          text-align: center;
+          font-weight: bolder;
+        }
+        .about{
+          width: 100%;
+          margin: 20px 0;
+        }
+        .objectives {
+          width: 100%;
+          height: auto;
+          margin: 0 auto;
+          padding-top: 125px;
+          .header {
+            text-align: center;
+            font-size: 2em;
+          }
+          .goals,
+          .tech {
+            width: 50%;
+            float: left;
+            ul {
+              // padding-left: 10px;
+            }
+          }
+        }//objectives
+        .breaker{
+          width: 100vw;
+          background-color: red;
+          padding: 50px;
+          margin: 50px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            flex: 1;
+          }
+        }
+
+        .the-plan,
+        .phase {
+          width: 100%;
+          height: auto;
+          font-weight: lighter;
+          padding: 0;
+          margin: 0 auto;
+          .border-shadow {
+            box-shadow: 5px 5px 2px 0px #ccc;
+          }
+          .header {
+            font-size: 5em;
+            display: block;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-weight: lighter;
+            margin: 30px auto 10px;
+          }
+
+        }//implementation
+        .wrap-up {
+          height: auto;
+          width: 100%;
+          position: relative;
+          img {
+            width: 80%;
+          }
+        }
+    }//project_container
+
+}//bugwild
+}
+
+@include smallPhoneLandscape {
+.bnb {
+
+  .lightbox-image {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1200;
+    margin-left: 10%;
+    margin-top: 4%;
+    display: none;
+  }
+
+  background-color: #f1f2f1;
+  * {
+
+    .text-left {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding:0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em;
+    }
+    .text-left-wide {
+      width: 100%;
+    }
+    .width-container {
+      width: 100%;
+    }
+    .text-right {
+      display: block;
+      width: 90%;
+      height: auto;
+      margin: 0 auto 50px;
+      padding:0;
+      float: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em;
+    }
+    .center-text {
+      width: 90%;
+      display: block;
+      height: auto;
+      margin: 0 auto 50px;
+
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em;
+    }
+    .wide-center-text {
+      width: 90%;
+      display: block;
+      margin: 0 auto 50px;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1.2em;
+    }
+    .image-left {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 0 auto 50px;
+      float: none;
+      padding: 0 0;
+      img {
+        width: 100%;
+      }
+    }
+    .image-right {
+      box-sizing: border-box;
+      width: 90%;
+      display: block;
+      margin: 0 auto 50px;
+      padding: 0 0;
+      float: none;
+      img {
+        width: 100%;
+      }
+    }
+    .image-right-small {
+      width: 100%;
+    }
+    .center-image {
+      box-sizing: border-box;
+      width: 90%;
+      display: block;
+      margin: 50px auto;
+      img {
+        width: 100%;
+      }
+    }
+    .clear {
+      height: 0;
+    }
+    hr {
+      background-color: red;
+      border: 1px solid red;
+
+      display: inline-block;
+      &.left {
+        width: 42%;
+        float: left;
+      }
+      &.right {
+        width: 42%;
+        float: right;
+      }
+    }
+    .center-icon {
+        height: auto;
+        transform: translateY(0);
+      i {
+        font-size: 3em;
+        flex: 1;
+        position: relative;
+
+        padding-left: 30px;
+        // display: none;
+      }
+      .circle {
+        display: none;
+
+      }//circle
+    }
+
+  }
+
+
+  .container {
+
+      .header {
+        font-size: 3em;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: lighter;
+      }
+      .sub-header {
+        font-size: 1.5em;
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+        height: auto;
+        text-align: center;
+        font-weight: bolder;
+      }
+      .about{
+        width: 100%;
+        margin: 20px 0;
+      }
+      .objectives {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 125px;
+        .header {
+          text-align: center;
+          font-size: 2em;
+        }
+        .goals,
+        .tech {
+          width: 50%;
+          float: left;
+          ul {
+            // padding-left: 10px;
+          }
+        }
+      }//objectives
+      .breaker{
+        width: 100vw;
+        background-color: red;
+        padding: 50px;
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          flex: 1;
+        }
+      }
+
+      .the-plan,
+      .phase {
+        width: 100%;
+        height: auto;
+        font-weight: lighter;
+        padding: 0;
+        margin: 0 auto;
+        .border-shadow {
+          box-shadow: 5px 5px 2px 0px #ccc;
+        }
+        .header {
+          font-size: 5em;
+          display: block;
+          width: 100%;
+          height: auto;
+          text-align: center;
+          font-weight: lighter;
+          margin: 30px auto 10px;
+        }
+
+      }//implementation
+      .wrap-up {
+        height: auto;
+        width: 100%;
+        position: relative;
+        img {
+          width: 80%;
+        }
+      }
+  }//project_container
 
 }//bugwild
 }
