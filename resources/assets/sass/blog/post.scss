@@ -93,7 +93,7 @@
     }//pre
   }
   .sidebar {
-    
+
     h2 {
       color: $darkFont;
     }
@@ -221,4 +221,52 @@
       }
     }
   }
+}
+
+@include bigPhone {
+
+        pre {
+
+          font-size: 1.3em;
+
+          code {
+            font-size: inherit;
+            white-space: pre;
+            overflow-x: scroll;
+            overflow-y: scroll;
+          }
+        }//pre
+
+}
+
+@include bigPhoneLandscape {
+
+        pre {
+
+          font-size: 1.3em;
+
+          code {
+            font-size: inherit;
+            white-space: pre;
+            overflow-x: scroll;
+            overflow-y: scroll;
+          }
+        }//pre
+
+}
+
+@include smallPhoneLandscape {
+
+        pre {
+
+          font-size: 1.3em;
+
+          code {
+            font-size: inherit;
+            white-space: pre;
+            overflow-x: scroll;
+            overflow-y: scroll;
+          }
+        }//pre
+
 }

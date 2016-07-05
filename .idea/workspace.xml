@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc2a087c-bdee-422d-ab5e-308d58aa0ad9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css.map" afterPath="$PROJECT_DIR$/public/css/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/modules/home.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/modules/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/projects/bnb.blade.php" afterPath="$PROJECT_DIR$/resources/views/projects/bnb.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/projects/bugwild.blade.php" afterPath="$PROJECT_DIR$/resources/views/projects/bugwild.blade.php" />
-    </list>
+    <list default="true" id="dc2a087c-bdee-422d-ab5e-308d58aa0ad9" name="Default" comment="" />
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -281,16 +274,16 @@
       <workItem from="1467302926540" duration="94000" />
       <workItem from="1467483120799" duration="79000" />
       <workItem from="1467483258675" duration="2546000" />
-      <workItem from="1467735194122" duration="1090000" />
+      <workItem from="1467735194122" duration="1112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5395000" />
+    <option name="totallyTimeSpent" value="5417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5096643" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.4903357" order="0" side_tool="false" content_ui="combo" />

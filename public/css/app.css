@@ -8310,4 +8310,31 @@ a:active {
         overflow-x: scroll;
         overflow-y: scroll; } }
 
+@media only screen and (min-device-width: 651px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  pre {
+    font-size: 1.3em; }
+    pre code {
+      font-size: inherit;
+      white-space: pre;
+      overflow-x: scroll;
+      overflow-y: scroll; } }
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 767px) and (orientation: landscape) {
+  pre {
+    font-size: 1.3em; }
+    pre code {
+      font-size: inherit;
+      white-space: pre;
+      overflow-x: scroll;
+      overflow-y: scroll; } }
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 700px) and (orientation: landscape) {
+  pre {
+    font-size: 1.3em; }
+    pre code {
+      font-size: inherit;
+      white-space: pre;
+      overflow-x: scroll;
+      overflow-y: scroll; } }
+
 /*# sourceMappingURL=app.css.map */
