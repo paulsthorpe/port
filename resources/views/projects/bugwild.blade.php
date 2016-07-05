@@ -90,8 +90,9 @@
             </svg>
         </div>
         <hr class="right">
-        <div class="clear"></div>
+
         <div class="the-plan">
+          <div class="clear"></div>
             <p class="header">Phase 1</p>
             <p class="sub-header">Intuitive Admin UI</p>
             <br></br>
@@ -121,13 +122,15 @@
         <div class="phase">
             <p class="header">Phase 2</p>
             <p class="sub-header">Business Solutions</p>
-            <p class="wide-center-text">The next phase consisted of planning every feature Daniel needed, plus some that he didn't know he needed. The idea is to over-deliver and leave customers with a product that exceeds expectations and solves problems they didn't even know they had. Years ago, I ran my own business reselling used cars and recycling/reselling car parts. I handled all of my business in a similar fashion to what Daniel has become accustomed to and if I had known better at the time, my business probably could have ended up in places I never thought of.
+            <p class="wide-center-text">The next phase consisted of planning every feature Daniel needed, plus some that he didn't know he needed. The idea is to over-deliver and leave customers with a product that exceeds expectations and solves problems they didn't even know they had. Years ago, I ran my own business reselling used cars and recycling/reselling car parts. I handled all of my business in a similar fashion to what Daniel has become accustomed to and if I had known better at the time, my business probably could have ended up in places I never thought of. Utilizing every tool you can is important in everyday life and even more in business. It isnt always about working harder because life is about leverage and the more you have the better.
                 <br></br>I created a feature to organize his orders by their shipment status and further by the date and time they were received. Now he knows exactly when he got an order and how to prioritize his work to keep every customer as happy as possible. Being a company that supplies custom, hand made products, there can be a wait time above what most internet shoppers are used to these days.</p>
             <div class="center-image">
                 <img class="border-shadow" src="/images/orders.png" />
             </div>
+            <div class="clear"></div>
+            <!--  -->
         </div>
-        <div class="clear"></div>
+
 
         <div class="phase">
             <p class="text-left">
@@ -205,12 +208,28 @@
             <div class="clear"></div>
         </div>
 
+
+        <hr class="left">
+        <div class="center-icon">
+            <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+            <svg viewBox="0 0 300 300" class="circle">
+                <defs id="defs2987" />
+                <g transform="translate(0,240)">
+                    <path sodipodi:type="arc" style="fill:none;stroke:#3fa46a;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;" id="path3787" sodipodi:cx="148.75" sodipodi:cy="148.33333" sodipodi:rx="148.75" sodipodi:ry="147.5" d="m 125.90315,2.583518 a 148.75,147.5 0 1 1 -0.29504,0.045776" transform="matrix(0.95883092,0,0,0.97260427,8.2072442,-235.10296)" sodipodi:start="4.5581863" sodipodi:end="10.839364" sodipodi:open="true" />
+                </g>
+            </svg>
+        </div>
+        <hr class="right">
+        <div class="clear"></div>
+
         <div class="wrap-up">
+          <p class="header">The Finish Line</p>
             <div class="project_image">
                 <div class="blinker"></div>
                 <img src="images/chromandphone.png" alt="">
             </div>
         </div>
+
 
 
 
@@ -234,7 +253,6 @@
             $('img').each(function(index) {
                 $(this).on('click', function() {
                     var src = $(this).attr('src');
-
                     var theTop = $(window).scrollTop();
                     $('.lightbox-image').attr('src', src).css({
                         'display': 'block',
@@ -277,8 +295,5 @@
                 });
             });
         }
-
-
-
     });
 </script>

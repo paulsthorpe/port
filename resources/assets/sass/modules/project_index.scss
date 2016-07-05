@@ -40,7 +40,7 @@
         &:hover {
           border-bottom: 3px solid #6c98b8;
           // color: #6c98b8;
-          padding-bottom: 17px;
+          padding-bottom: 7px;
           opacity: 1;
         }//nav_element&:hover
 
@@ -55,12 +55,33 @@
     margin-top: 200px;
     position: relative;
 
-    .thumbnail-image {
-      width: 100%;
-      img {
+    .project-thumbnail {
+      .thumbnail-image {
         width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .short {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        ul {
+          list-style: none;
+          opacity: 0;
+          transform: translateY(400px);
+          transition: 0.4s;
+        }
+      }
+      &:hover .short {
+        ul {
+          transform: translateY(0);
+          opacity: 1;
+        }
       }
     }
+
   }
 
 
@@ -69,6 +90,15 @@
     height: 60vh;
     position: relative;
     top: 0;
+    color: #fff;
+    * {
+      p {
+      font-family: 'Raleway', sans-serif;
+    }
+    i {
+      color: #fff;
+    }
+    }
 
     @include background-image-blue('/images/contact.jpg');
     .contact_info_wrapper {

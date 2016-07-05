@@ -69,6 +69,10 @@ Route::get('/bugwild', function() {
   return view('projects.bugwild');
 });
 
+Route::get('/bnb', function() {
+  return view('projects.bnb');
+});
+
 Route::get('/google4ff0739b039c1218.html', function () {
     return view('google');
 });

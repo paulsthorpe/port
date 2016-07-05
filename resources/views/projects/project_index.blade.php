@@ -20,43 +20,49 @@
     </ul>
   </nav>
   <div class="showcase">
-    <figure class="project-thumbnail col-lg-5 col-lg-offset-1 col-md-12 col-sm-12">
-      <div class="thumbnail-image">
-        <img src="/images/bw.png" alt="" />
-      </div>
-      <div class="short">
-        <h1>BugWild Fly Co.</h1>
-        <ul>
-          <li>Website Design</li>
-          <li>Responsive Design</li>
-          <li>Back End Architecture</li>
-          <li>Financial Reports Email & Excel Documents</li>
-          <li>Paypal REST API Integration</li>
-          <li>Email Order Alerts</li>
-          <li>Custom CMS</li>
-          <li>Blog</li>
-        </ul>
-      </div>
-    </figure>
-    <figure class="project-thumbnail col-lg-5 col-md-12 col-sm-12">
-      <div class="thumbnail-image">
-        <img src="/images/bnb.png" alt="" />
-      </div>
-      <div class="short">
-        <h1>Best-N-Burgers</h1>
-        <ul>
-          <li>Website Design</li>
-          <li>Responsive Design</li>
-          <li>Back End Architecture/API</li>
-          <li>Email Daily Sales Reports</li>
-          <li>Financial Reports Email & Excel Documents</li>
-          <li>Payroll Reports By Excel Documents</li>
-          <li>Employee Timeclock Application</li>
-          <li>Online Food Ordering System</li>
-          <li>Custom CMS</li>
-        </ul>
-      </div>
-    </figure>
+    <a href="/bugwild">
+      <figure class="project-thumbnail col-lg-5 col-lg-offset-1 col-md-12 col-sm-12">
+        <div class="thumbnail-image">
+          <img src="/images/bw.png" alt="" />
+        </div>
+        <div class="short">
+          <h1>BugWild Fly Co.</h1>
+          <ul>
+            <li>Website Design</li>
+            <li>Responsive Design</li>
+            <li>Back End Architecture</li>
+            <li>Financial Reports Email & Excel Documents</li>
+            <li>Paypal REST API Integration</li>
+            <li>Email Order Alerts</li>
+            <li>Custom CMS</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+      </figure>
+    </a>
+
+    <a href="/bnb">
+      <figure class="project-thumbnail col-lg-5 col-md-12 col-sm-12">
+        <div class="thumbnail-image">
+          <img src="/images/bnb.png" alt="" />
+        </div>
+        <div class="short">
+          <h1>Best-N-Burgers</h1>
+          <ul>
+            <li>Website Design</li>
+            <li>Responsive Design</li>
+            <li>Back End Architecture/API</li>
+            <li>Email Daily Sales Reports</li>
+            <li>Financial Reports Email & Excel Documents</li>
+            <li>Payroll Reports By Excel Documents</li>
+            <li>Employee Timeclock Application</li>
+            <li>Online Food Ordering System</li>
+            <li>Custom CMS</li>
+          </ul>
+        </div>
+      </figure>
+    </a>
+
   </div>
 
 
