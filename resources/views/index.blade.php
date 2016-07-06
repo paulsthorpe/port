@@ -63,7 +63,7 @@
         I use modern PHP MVC frameworks like <a href="http://laravel.com"><strong>Laravel</strong></a> and Object Oriented practices to
         make sure applications are efficient, reliable, easily manipulated and scalable. I love a great challenge, and get the most pleasure
         from projects heavily reliant on the server and data. Not too much in life gives me more pleasure than creating/working
-        with APIs, creating custom content management systems (Sorry Wordpress!), or organzing and coordinating data flow. PHP is a
+        with APIs, creating custom content management systems, or organzing and coordinating data flow. PHP is a
         reliable and time tested technology. While it may not carry the most scene hype, it is a solid foundation and is used in an estimated
         82% of websites today. <a href="http://w3techs.com/technologies/details/pl-php/all/all"><strong>More on that</strong></a></p>
     </div>
