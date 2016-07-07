@@ -7360,11 +7360,12 @@ a:active {
       width: 100%;
       margin: 100px 0; }
     .bnb .container .objectives {
-      width: 90%;
+      width: 60%;
       height: auto;
-      margin: 20px auto; }
+      margin: 100px auto;
+      padding-left: 10%; }
       .bnb .container .objectives .header {
-        text-align: center; }
+        text-align: left; }
       .bnb .container .objectives .goals,
       .bnb .container .objectives .tech {
         width: 50%;
