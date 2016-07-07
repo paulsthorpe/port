@@ -7,7 +7,7 @@
   <div class="row">
     <h1 class="page-header">Add Post</h1>
   </div>
-    <form action="/admin/edit_post/{{$post->id}}" method="post" enctype="multipart/form-data">
+    <form action="/admin/edit_post" method="post" enctype="multipart/form-data">
       {{ method_field('PATCH') }}
       {{ csrf_field() }}
       <div class="col-md-8">
